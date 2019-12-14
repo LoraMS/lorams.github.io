@@ -1,0 +1,13 @@
+body {
+  background-color: azure;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-right: 10em;
+}
+/*# sourceMappingURL=style.css.map */
