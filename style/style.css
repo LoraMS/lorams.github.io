@@ -1,6 +1,133 @@
 @import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
 body {
+  background-color: white;
+}
+
+main section {
+  width: 80%;
+  margin: 0 auto;
   background-color: azure;
+}
+
+main .home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .home-page div:first-child div:first-child {
+  position: relative;
+}
+
+main .home-page div:first-child div:first-child:after {
+  display: block;
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 6.5rem;
+  border-bottom: 0.5rem solid blue;
+  border-right: 0.5rem solid blue;
+}
+
+main .home-page div:first-child div:first-child:before {
+  display: block;
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: -1.5em;
+  left: 6.5rem;
+  border-top: 0.5rem solid orange;
+  border-left: 0.5rem solid orange;
+}
+
+main .home-page div:first-child div:first-child .profile-image-holder {
+  width: 50%;
+  margin: 10rem auto;
+  position: relative;
+}
+
+main .home-page div:first-child div:first-child .profile-image-holder:after {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: -0.8rem;
+  right: -0.8rem;
+  border-bottom: 0.5rem solid blue;
+  border-right: 0.5rem solid blue;
+}
+
+main .home-page div:first-child div:first-child .profile-image-holder:before {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  border-top: 0.5rem solid orange;
+  border-left: 0.5rem solid orange;
+}
+
+main .home-page div:first-child div:first-child .profile-image-holder img {
+  max-width: 100%;
+}
+
+main .home-page div.animated-typing p {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  font-weight: bold;
+}
+
+main .home-page div.animated-typing p:first-child {
+  -webkit-animation: type 8s steps(60, end);
+          animation: type 8s steps(60, end);
+}
+
+main .home-page div.animated-typing p:nth-child(2) {
+  -webkit-animation: type2 10s steps(20, end);
+          animation: type2 10s steps(20, end);
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
 }
 
 header .navigation {
