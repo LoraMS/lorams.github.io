@@ -1,15 +1,24 @@
 .home-page {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    // justify-content: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-image: url("./../assets/images/main-bg.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
 
-    div:first-child {
-        .profile-image-holder {
+    .profile-image-holder {
+        flex: 1;
+
+        .profile-image {
             position: relative;
+            float: left;
+            top: 25%;
+            left: 45%;
+            transform: translate(-25%, -45%);
+            margin: 10rem auto;
 
             &:before {
                 display: block;
@@ -19,8 +28,8 @@
                 position: absolute;
                 top: -0.9rem;
                 right: -0.5rem;
-                border-top: 1rem solid $color10;
-                border-right: 1rem solid $color10;
+                border-top: 1rem solid $color2;
+                border-right: 1rem solid $color2;
 
                 // @include profile-image-border;
             }
@@ -33,14 +42,20 @@
     }
 }
 
-div:nth-child(2) {
+.heading {
+    flex: 1;
     // position: relative;
     // top: 30%;
     // -ms-transform: translateY(30%);
     // -webkit-transform: translateY(30%);
     // transform: translateY(30%);
 
-    div.animated-typing {
+    div.animated-heading {
+         position: relative;
+        float: left;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         h2 {
             // TO DO
@@ -48,7 +63,7 @@ div:nth-child(2) {
             vertical-align: middle;
             font-size: 2rem;
             font-family: 'Coming Soon', cursive;
-            color: $color10;
+            color: $color2;
 
             &:nth-child(1) {
                 // width: 1.5em;
@@ -87,13 +102,13 @@ div:nth-child(2) {
         a {
             padding: 0.625rem 1.25rem;
 
-            border: 2px solid $color10;
+            border: 2px solid $color2;
             color: #fff;
-            background-color: $color10;
+            background-color: $color2;
             border-radius: 0.3rem;
 
             &:hover {
-                color: $color10;
+                color: $color2;
                 background-color: #fff;
             }
         }

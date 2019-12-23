@@ -139,6 +139,10 @@ h1 {
   font-size: 2.4em;
 }
 
+h2 {
+  font-size: 2.0em;
+}
+
 h3 {
   font-size: 1.7em;
 }
@@ -195,46 +199,65 @@ header .navigation {
           align-items: center;
 }
 
+header .navigation nav ul {
+  margin-bottom: 0;
+}
+
 header .navigation nav ul li {
   display: inline-block;
 }
 
 header .navigation nav ul li a {
-  padding: 0.625rem;
+  color: #552783;
+  padding: 1rem;
   display: inline-block;
   text-transform: uppercase;
 }
 
-footer ul {
-  list-style-type: none;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-footer ul li {
-  display: inline-block;
-  padding-right: 2.5rem;
+footer p {
+  text-align: center;
+  color: #552783;
 }
 
 .home-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-image: url("./../assets/images/main-bg.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
 }
 
-.home-page div:first-child .profile-image-holder {
-  position: relative;
+.home-page .profile-image-holder {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.home-page div:first-child .profile-image-holder:before {
+.home-page .profile-image-holder .profile-image {
+  position: relative;
+  float: left;
+  top: 25%;
+  left: 45%;
+  -webkit-transform: translate(-25%, -45%);
+          transform: translate(-25%, -45%);
+  margin: 10rem auto;
+}
+
+.home-page .profile-image-holder .profile-image:before {
   display: block;
   content: "";
   width: 15rem;
@@ -246,12 +269,27 @@ footer ul li {
   border-right: 1rem solid #cccbc7;
 }
 
-.home-page div:first-child .profile-image-holder img {
+.home-page .profile-image-holder .profile-image img {
   max-width: 100%;
   height: auto;
 }
 
-div:nth-child(2) div.animated-typing h2 {
+.heading {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.heading div.animated-heading {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.heading div.animated-heading h2 {
   font-weight: bold;
   vertical-align: middle;
   font-size: 2rem;
@@ -259,11 +297,11 @@ div:nth-child(2) div.animated-typing h2 {
   color: #cccbc7;
 }
 
-div:nth-child(2) div.animated-typing h2:nth-child(3) {
+.heading div.animated-heading h2:nth-child(3) {
   margin-bottom: 3.75rem;
 }
 
-div:nth-child(2) div.animated-typing a {
+.heading div.animated-heading a {
   padding: 0.625rem 1.25rem;
   border: 2px solid #cccbc7;
   color: #fff;
@@ -271,7 +309,7 @@ div:nth-child(2) div.animated-typing a {
   border-radius: 0.3rem;
 }
 
-div:nth-child(2) div.animated-typing a:hover {
+.heading div.animated-heading a:hover {
   color: #cccbc7;
   background-color: #fff;
 }
