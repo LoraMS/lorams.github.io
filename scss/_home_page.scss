@@ -28,8 +28,8 @@
                 position: absolute;
                 top: -0.9rem;
                 right: -0.5rem;
-                border-top: 1rem solid $color2;
-                border-right: 1rem solid $color2;
+                border-top: 1rem solid $color-home;
+                border-right: 1rem solid $color-home;
 
                 // @include profile-image-border;
             }
@@ -63,7 +63,7 @@
             vertical-align: middle;
             font-size: 2rem;
             font-family: 'Coming Soon', cursive;
-            color: $color2;
+            color: $color-home;
 
             &:nth-child(1) {
                 // width: 1.5em;
@@ -102,13 +102,13 @@
         a {
             padding: 0.625rem 1.25rem;
 
-            border: 2px solid $color2;
+            border: 2px solid $color-home;
             color: #fff;
-            background-color: $color2;
+            background-color: $color-home;
             border-radius: 0.3rem;
 
             &:hover {
-                color: $color2;
+                color: $color-home;
                 background-color: #fff;
             }
         }

@@ -17,95 +17,21 @@ html {
           box-sizing: inherit;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  99.9% {
-    border-right: .15em solid blue;
-  }
-  100% {
-    border: none;
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes type {
-  0% {
-    width: 0;
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  99.9% {
-    border-right: .15em solid blue;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .15em solid blue;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .15em solid blue;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@-webkit-keyframes blink {
-  50% {
-    border-color: tranparent;
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -183,6 +109,10 @@ body {
 main {
   width: 80%;
   margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
 }
 
 header .navigation {
@@ -312,5 +242,118 @@ footer p {
 .heading div.animated-heading a:hover {
   color: #cccbc7;
   background-color: #fff;
+}
+
+.about-page {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-page .info {
+  width: 25%;
+  background-color: #88bbd6;
+}
+
+.about-page .info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-page .info .general-info {
+  color: #ececec;
+  padding: 2rem 3.125rem;
+}
+
+.about-page .info .general-info h2 {
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-page .info .general-info ul li {
+  padding: 0.625rem;
+  font-weight: bold;
+}
+
+.about-page .info .general-info ul li i {
+  margin-right: 1.25rem;
+  color: #dcd9f3;
+}
+
+.about-page .info .general-info ul li .fa-envelope,
+.about-page .info .general-info ul li .fa-laptop-code {
+  margin-right: 1rem;
+}
+
+.about-page .info .general-info ul li .fa-mobile-alt {
+  margin-right: 1.5rem;
+}
+
+.about-page .info .general-info ul li div {
+  display: inline-block;
+}
+
+.about-page .info .general-info ul li div span {
+  color: #dcd9f3;
+}
+
+.about-page .info .general-info ul li div a {
+  color: #fff;
+}
+
+.about-page .info .general-info ul li div a:hover {
+  color: #552783;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.about-page .info .social-info {
+  text-align: center;
+}
+
+.about-page .info .social-info a {
+  color: #fff;
+}
+
+.about-page .info .social-info a i {
+  margin-right: 1rem;
+}
+
+.about-page .info .social-info a i:hover {
+  color: #552783;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.about-page .about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3rem 5rem;
+  color: #552783;
+}
+
+.about-page .about h1 {
+  color: #cccbc7;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+}
+
+.about-page .about h2 {
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-page .about h5 {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
