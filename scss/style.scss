@@ -1,7 +1,16 @@
 @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
+
 @import 'mixins';
+@import 'variables';
+@import 'reset';
+@import 'animations';
+@import 'typography';
 
 @import 'layout';
 @import 'site_header';
 @import 'site_footer';
+@import 'home_page';

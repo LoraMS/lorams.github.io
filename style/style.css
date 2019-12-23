@@ -1,100 +1,20 @@
 @import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
-body {
-  background-color: white;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Coming+Soon&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
 
-main section {
-  width: 80%;
-  margin: 0 auto;
-  background-color: azure;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-main .home-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main .home-page div:first-child div:first-child .profile-image-holder {
-  width: 50%;
-  margin: 10rem auto;
-  position: relative;
-}
-
-main .home-page div:first-child div:first-child .profile-image-holder:after {
-  display: block;
-  content: "";
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  bottom: -0.8rem;
-  right: -0.8rem;
-  border-bottom: 0.5rem solid blue;
-  border-right: 0.5rem solid blue;
-}
-
-main .home-page div:first-child div:first-child .profile-image-holder:before {
-  display: block;
-  content: "";
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  top: -0.8rem;
-  left: -0.8rem;
-  border-top: 0.5rem solid blue;
-  border-left: 0.5rem solid blue;
-}
-
-main .home-page div:first-child div:first-child .profile-image-holder img {
-  max-width: 100%;
-}
-
-main .home-page div.animated-typing {
-  text-align: center;
-}
-
-main .home-page div.animated-typing p {
-  border-right: .15em solid blue;
-  white-space: nowrap;
-  overflow: hidden;
-  font-weight: bold;
-  vertical-align: middle;
-  font-size: 2rem;
-  text-align: center;
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-30%);
-  transform: translateY(-30%);
-}
-
-main .home-page div.animated-typing p:nth-child(1) {
-  width: 2em;
-  -webkit-animation: type 2s steps(3, end);
-  animation: type 2s steps(3, end);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-main .home-page div.animated-typing p:nth-child(2) {
-  width: 7.5em;
-  opacity: 0;
-  -webkit-animation: type2 2s steps(15, end);
-  animation: type2 2s steps(15, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-main .home-page div.animated-typing p:nth-child(3) {
-  width: 10em;
-  opacity: 0;
-  -webkit-animation: type3 2s steps(22, end), blink 0.5s step-end infinite alternate;
-  animation: type3 2s steps(22, end), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 @keyframes type {
@@ -189,6 +109,78 @@ main .home-page div.animated-typing p:nth-child(3) {
   }
 }
 
+html {
+  font: normal 16px/1.5 'Open Sans', cursive;
+}
+
+body,
+input,
+textarea,
+select,
+option,
+table,
+th,
+td,
+hr {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0.5em 0 1em 0;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+  margin-bottom: 1.5em;
+}
+
+li {
+  list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background: url("./../assets/images/background-2498540_1920 (3).jpg");
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header .navigation {
   width: 80%;
   margin: 0 auto;
@@ -203,11 +195,11 @@ header .navigation {
           align-items: center;
 }
 
-header nav ul li {
+header .navigation nav ul li {
   display: inline-block;
 }
 
-header nav ul li a {
+header .navigation nav ul li a {
   padding: 0.625rem;
   display: inline-block;
   text-transform: uppercase;
@@ -219,6 +211,68 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  padding-right: 10em;
+  padding-right: 2.5rem;
+}
+
+.home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("./../assets/images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home-page div:first-child .profile-image-holder {
+  position: relative;
+}
+
+.home-page div:first-child .profile-image-holder:before {
+  display: block;
+  content: "";
+  width: 15rem;
+  height: 4rem;
+  position: absolute;
+  top: -0.9rem;
+  right: -0.5rem;
+  border-top: 1rem solid #cccbc7;
+  border-right: 1rem solid #cccbc7;
+}
+
+.home-page div:first-child .profile-image-holder img {
+  max-width: 100%;
+  height: auto;
+}
+
+div:nth-child(2) div.animated-typing h2 {
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-family: 'Coming Soon', cursive;
+  color: #cccbc7;
+}
+
+div:nth-child(2) div.animated-typing h2:nth-child(3) {
+  margin-bottom: 3.75rem;
+}
+
+div:nth-child(2) div.animated-typing a {
+  padding: 0.625rem 1.25rem;
+  border: 2px solid #cccbc7;
+  color: #fff;
+  background-color: #cccbc7;
+  border-radius: 0.3rem;
+}
+
+div:nth-child(2) div.animated-typing a:hover {
+  color: #cccbc7;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
