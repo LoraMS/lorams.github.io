@@ -1,10 +1,11 @@
 footer {
-    ul{
-        list-style-type: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
-        li{
-            display: inline-block;
-            padding-right: 2.5rem;
-        }
+    p {
+        text-align: center;
+        color: $color1;
     }
 }
