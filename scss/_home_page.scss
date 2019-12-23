@@ -1,0 +1,101 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("./../assets/images/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    div:first-child {
+        .profile-image-holder {
+            position: relative;
+
+            &:before {
+                display: block;
+                content: "";
+                width: 15rem;
+                height: 4rem;
+                position: absolute;
+                top: -0.9rem;
+                right: -0.5rem;
+                border-top: 1rem solid $color10;
+                border-right: 1rem solid $color10;
+
+                // @include profile-image-border;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+div:nth-child(2) {
+    // position: relative;
+    // top: 30%;
+    // -ms-transform: translateY(30%);
+    // -webkit-transform: translateY(30%);
+    // transform: translateY(30%);
+
+    div.animated-typing {
+
+        h2 {
+            // TO DO
+            font-weight: bold;
+            vertical-align: middle;
+            font-size: 2rem;
+            font-family: 'Coming Soon', cursive;
+            color: $color10;
+
+            &:nth-child(1) {
+                // width: 1.5em;
+                // -webkit-animation: type 2s steps(3, end);
+                // animation: type 2s steps(3, end);
+                // -webkit-animation-fill-mode: forwards;
+                // animation-fill-mode: forwards;
+            }
+
+            &:nth-child(2) {
+                // width: 7.5em;
+                // opacity: 0;
+                // -webkit-animation: type2 2s steps(15, end);
+                // animation: type2 2s steps(15, end);
+                // -webkit-animation-delay: 2s;
+                // animation-delay: 2s;
+                // -webkit-animation-fill-mode: forwards;
+                // animation-fill-mode: forwards;
+            }
+
+            &:nth-child(3) {
+                // width: 11em;
+                // opacity: 0;
+                // -webkit-animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
+                // animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
+                // -webkit-animation-delay: 4s;
+                // animation-delay: 4s;
+                // -webkit-animation-fill-mode: forwards;
+                // animation-fill-mode: forwards;
+
+                margin-bottom: 3.75rem;
+            }
+
+        }
+
+        a {
+            padding: 0.625rem 1.25rem;
+
+            border: 2px solid $color10;
+            color: #fff;
+            background-color: $color10;
+            border-radius: 0.3rem;
+
+            &:hover {
+                color: $color10;
+                background-color: #fff;
+            }
+        }
+    }
+}
