@@ -1,17 +1,17 @@
-@mixin profile-image-border($width: 3rem, $height: 3rem, $top: -0.8rem, $right: -0.8rem, $left: -0.8rem, $bottom: -0.8rem){
+@mixin profile-image-border($width: 15rem, $height: 4rem, $top: -0.9rem, $right: -0.5rem, $left: -0.5rem, $bottom: -0.2rem){
     position: relative;
 
-    &:after {
-        display: block;
-        content: "";
-        width: $width;
-        height: $height;
-        position: absolute;
-        bottom: $bottom;
-        right: $right;
-        border-bottom: 0.5rem solid blue;
-        border-right: 0.5rem solid blue;
-    }
+    // &:after {
+    //     display: block;
+    //     content: "";
+    //     width: $width;
+    //     height: $height;
+    //     position: absolute;
+    //     bottom: $bottom;
+    //     right: $right;
+    //     border-bottom: 0.5rem solid $color11;
+    //     border-right: 0.5rem solid $color11;
+    // }
 
     &:before {
         display: block;
@@ -20,8 +20,8 @@
         height: $height;
         position: absolute;
         top: $top;
-        left: $left;
-        border-top: 0.5rem solid blue;
-        border-left: 0.5rem solid blue;
+        right: $left;
+        border-top: 1rem solid $color10;
+        border-right: 1rem solid $color10;
     }
 }
