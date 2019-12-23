@@ -5,15 +5,15 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        nav ul li {
+            display: inline-block;
+
+            a {
+                padding: 0.625rem;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+        }
     }
-    nav ul li {
-        display: inline-block;
-    }
-    
-    nav ul li a{
-        padding: 0.625rem;
-        display: inline-block;
-        text-transform: uppercase;
-    }
-  }
-   
+}
