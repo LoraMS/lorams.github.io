@@ -9,8 +9,8 @@
     //     position: absolute;
     //     bottom: $bottom;
     //     right: $right;
-    //     border-bottom: 0.5rem solid $color11;
-    //     border-right: 0.5rem solid $color11;
+    //     border-bottom: 0.5rem solid $color3;
+    //     border-right: 0.5rem solid $color3;
     // }
 
     &:before {
@@ -21,7 +21,7 @@
         position: absolute;
         top: $top;
         right: $left;
-        border-top: 1rem solid $color10;
-        border-right: 1rem solid $color10;
+        border-top: 1rem solid $color2;
+        border-right: 1rem solid $color2;
     }
 }
