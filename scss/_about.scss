@@ -51,7 +51,7 @@
                         color: #fff;
 
                         &:hover {
-                            color: $color-header;
+                            color: $color-info;
                             text-decoration: underline;
                             cursor: pointer;
                         }
@@ -70,7 +70,7 @@
                     margin-right: 1rem;
 
                     &:hover {
-                        color: $color-header;
+                        color: $color-info;
                         -moz-transform: rotate(360deg);
                         -webkit-transform: rotate(360deg);
                         -ms--transform: rotate(360deg);
@@ -91,20 +91,35 @@
         padding: 3rem 5rem;
         color: $color-header;
 
-        h1 {
-            color: $color-home;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 3rem;
+        .description{
+            h1 {
+                color: $color-home;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                // font-size: 3rem;
+            }
+    
+            h2{
+                margin-bottom: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+    
+            h5{
+                margin-top: 0;
+                font-family: 'Roboto', sans-serif;
+            }
         }
 
-        h2{
-            margin-bottom: 0;
-            font-family: 'Roboto', sans-serif;
-        }
+        .services{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-        h5{
-            margin-top: 0;
+                li{
+                    text-align: center;
+                }
+            }
         }
     }
 }
