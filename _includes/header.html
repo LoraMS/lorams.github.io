@@ -7,15 +7,37 @@
             </a>
         </div>
         <nav>
+            <div class="lang">
+                <!-- {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                {% for post in posts %} 
+                <a href="{{ post.url }}" class="{{ post.lang }}">
+                    {{ post.lang }}
+                </a> {% endfor %} -->
+
+                {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                {% for page in pages %}
+                <a href="{{ site.base-url }}{{ page.url }}" class="{{ page.lang }}">
+                    <img src="./../assets/images/{{page.lang}}.png" alt="flag">
+                    {{ page.lang }}
+                </a>
+                {% endfor %}
+            </div>
             <ul>
-                <li class="nav-item {% if page.url == '/about/' %}active{% endif %}"><a href="/about">About</a></li>
-                <li class="nav-item"><a href="#">Education</a></li>
-                <li class="nav-item"><a href="#">Certificates</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">Contacts</a></li>
+                {% assign url = page.url|remove:'.html' %}
+                {% for menu in site.t[page.lang] %}
+                <li class="nav-item {% if url == menu[1].url %}active{% endif %}"><a
+                        href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                {% endfor %}
+                
+                <!--
+                    {% assign pages=site.pages | where:"lang", page.lang %}
+                    {% for my_page in pages %}
+                      {% if my_page.title %}
+                      <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                      {% endif %}
+                    {% endfor %}
+                   -->
             </ul>
-            <span>bg</span>
-            <span>en</span>
         </nav>
     </section>
 </header>

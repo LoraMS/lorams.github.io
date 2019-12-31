@@ -10,3 +10,7 @@ main {
 ul{
   list-style-type: none;
 }
+
+.en:lang(en), .bg:lang(bg){
+  font-weight: bold;
+}

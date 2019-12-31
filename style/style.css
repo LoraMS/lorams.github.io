@@ -115,6 +115,10 @@ ul {
   list-style-type: none;
 }
 
+.en:lang(en), .bg:lang(bg) {
+  font-weight: bold;
+}
+
 header .navigation {
   width: 80%;
   margin: 0 auto;
@@ -129,8 +133,17 @@ header .navigation {
           align-items: center;
 }
 
-header .navigation nav ul {
-  margin-bottom: 0;
+header .navigation nav .lang {
+  text-align: end;
+}
+
+header .navigation nav .lang a {
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+header .navigation nav .lang a img {
+  vertical-align: middle;
 }
 
 header .navigation nav ul li.nav-item {
@@ -155,11 +168,11 @@ header .navigation nav ul li.nav-item::after {
   top: 80%;
 }
 
-header .navigation nav ul li.nav-item:hover:after {
+header .navigation nav ul li.nav-item:hover::after {
   visibility: visible;
 }
 
-header .navigation nav ul li.nav-item.active:after {
+header .navigation nav ul li.nav-item.active::after {
   visibility: visible;
 }
 
@@ -356,8 +369,12 @@ footer p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3rem 5rem;
+  padding: 3rem 5rem 0;
   color: #62289b;
+}
+
+.about-page .about .description {
+  padding-bottom: 1rem;
 }
 
 .about-page .about .description h1 {
@@ -390,5 +407,9 @@ footer p {
 
 .about-page .about .services ul li {
   text-align: center;
+}
+
+.about-page .about .services ul li p {
+  padding: 0 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
