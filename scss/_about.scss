@@ -88,10 +88,11 @@
 
     .about {
         flex: 1;
-        padding: 3rem 5rem;
+        padding: 3rem 5rem 0;
         color: $color-header;
 
         .description{
+            padding-bottom: 1rem;
             h1 {
                 color: $color-home;
                 text-align: center;
@@ -118,6 +119,9 @@
 
                 li{
                     text-align: center;
+                    p{
+                        padding: 0 1.5rem;
+                    }
                 }
             }
         }
