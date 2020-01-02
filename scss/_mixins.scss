@@ -1,4 +1,4 @@
-@mixin profile-image-border($width: 15rem, $height: 4rem, $top: -0.9rem, $right: -0.5rem, $left: -0.5rem, $bottom: -0.2rem){
+@mixin profile-image-border($width: 15rem, $height: 4rem, $top: -0.9rem, $right: -0.5rem, $left: -0.5rem, $bottom: -0.2rem) {
     position: relative;
 
     // &:after {
@@ -23,5 +23,21 @@
         right: $left;
         border-top: 1rem solid $color-home;
         border-right: 1rem solid $color-home;
+    }
+}
+
+@mixin button($color: white) {
+    a {
+        padding: 0.625rem 1.25rem;
+
+        border: 2px solid $color;
+        color: #fff;
+        background-color: $color;
+        border-radius: 0.3rem;
+
+        &:hover {
+            color: $color;
+            background-color: #fff;
+        }
     }
 }
