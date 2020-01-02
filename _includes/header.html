@@ -24,7 +24,7 @@
             </div>
             <ul>
                 {% assign url = page.url|remove:'.html' %}
-                {% for menu in site.t[page.lang] %}
+                {% for menu in site.t[page.lang] offset:1 %}
                 <li class="nav-item {% if url == menu[1].url %}active{% endif %}"><a
                         href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
                 {% endfor %}
