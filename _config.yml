@@ -39,8 +39,8 @@ t:
       name: "About"
       url: "/about"
     education:
-      name: "Education"
-      url: "/education"
+      name: "Skills"
+      url: "/skills"
     certificates:
       name: "Certificates"
       url: "/certificates"
@@ -58,8 +58,8 @@ t:
       name: "За мен"
       url: "/about_bg"
     education:
-      name: "Образование"
-      url: "/education_bg"
+      name: "Умения"
+      url: "/skills_bg"
     certificates:
       name: "Сертификати"
       url: "/certificates_bg"

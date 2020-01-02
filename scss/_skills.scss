@@ -1,0 +1,23 @@
+.skills-page {
+    // background-color: #fff;
+    // display: flex;
+    // flex-wrap: wrap;
+    .skills{
+        flex: 1;
+
+        .services{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li{
+                    text-align: center;
+                    p{
+                        padding: 0 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
