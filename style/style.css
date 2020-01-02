@@ -111,12 +111,17 @@ main {
   margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
+main section {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.en:lang(en), .bg:lang(bg) {
-  font-weight: bold;
+ul {
+  list-style-type: none;
 }
 
 header .navigation {
@@ -177,15 +182,94 @@ header .navigation nav ul li.nav-item.active::after {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  height: auto;
+  padding-top: 2rem;
 }
 
 footer p {
   text-align: center;
   color: #62289b;
+}
+
+.info {
+  width: 25%;
+  background-color: #88bbd6;
+}
+
+.info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info .general-info {
+  color: #ececec;
+  padding: 2rem 3rem;
+}
+
+.info .general-info h2 {
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info .general-info ul li {
+  padding: 0.625rem;
+  font-weight: bold;
+}
+
+.info .general-info ul li i {
+  margin-right: 1.25rem;
+  color: #dedde6;
+}
+
+.info .general-info ul li .fa-envelope,
+.info .general-info ul li .fa-laptop-code {
+  margin-right: 1rem;
+}
+
+.info .general-info ul li .fa-mobile-alt {
+  margin-right: 1.5rem;
+}
+
+.info .general-info ul li div {
+  display: inline-block;
+}
+
+.info .general-info ul li div span {
+  color: #dedde6;
+}
+
+.info .general-info ul li div a {
+  color: #fff;
+}
+
+.info .general-info ul li div a:hover {
+  color: #dedde6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info .social-info {
+  text-align: center;
+}
+
+.info .social-info a {
+  color: #fff;
+}
+
+.info .social-info a i {
+  margin-right: 1rem;
+}
+
+.info .social-info a i:hover {
+  color: #dedde6;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .home-page {
@@ -263,7 +347,7 @@ footer p {
   margin-bottom: 3.75rem;
 }
 
-.heading div.animated-heading a {
+.heading div.animated-heading .button a {
   padding: 0.625rem 1.25rem;
   border: 2px solid #c9c6be;
   color: #fff;
@@ -271,98 +355,9 @@ footer p {
   border-radius: 0.3rem;
 }
 
-.heading div.animated-heading a:hover {
+.heading div.animated-heading .button a:hover {
   color: #c9c6be;
   background-color: #fff;
-}
-
-.about-page {
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.about-page .info {
-  width: 25%;
-  background-color: #88bbd6;
-}
-
-.about-page .info img {
-  max-width: 100%;
-  height: auto;
-}
-
-.about-page .info .general-info {
-  color: #ececec;
-  padding: 2rem 3.125rem;
-}
-
-.about-page .info .general-info h2 {
-  text-align: center;
-  margin-top: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.about-page .info .general-info ul li {
-  padding: 0.625rem;
-  font-weight: bold;
-}
-
-.about-page .info .general-info ul li i {
-  margin-right: 1.25rem;
-  color: #dedde6;
-}
-
-.about-page .info .general-info ul li .fa-envelope,
-.about-page .info .general-info ul li .fa-laptop-code {
-  margin-right: 1rem;
-}
-
-.about-page .info .general-info ul li .fa-mobile-alt {
-  margin-right: 1.5rem;
-}
-
-.about-page .info .general-info ul li div {
-  display: inline-block;
-}
-
-.about-page .info .general-info ul li div span {
-  color: #dedde6;
-}
-
-.about-page .info .general-info ul li div a {
-  color: #fff;
-}
-
-.about-page .info .general-info ul li div a:hover {
-  color: #dedde6;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.about-page .info .social-info {
-  text-align: center;
-}
-
-.about-page .info .social-info a {
-  color: #fff;
-}
-
-.about-page .info .social-info a i {
-  margin-right: 1rem;
-}
-
-.about-page .info .social-info a i:hover {
-  color: #dedde6;
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .about-page .about {
@@ -374,11 +369,10 @@ footer p {
 }
 
 .about-page .about .description {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .about-page .about .description h1 {
-  color: #c9c6be;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -393,7 +387,34 @@ footer p {
   font-family: 'Roboto', sans-serif;
 }
 
-.about-page .about .services ul {
+.about-page .about .description p {
+  margin: 2.5rem 0;
+}
+
+.about-page .about .button a {
+  margin-right: 2rem;
+}
+
+.about-page .about .button a {
+  padding: 0.625rem 1.25rem;
+  border: 2px solid #88bbd6;
+  color: #fff;
+  background-color: #88bbd6;
+  border-radius: 0.3rem;
+}
+
+.about-page .about .button a:hover {
+  color: #88bbd6;
+  background-color: #fff;
+}
+
+.skills-page .skills {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.skills-page .skills .services ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,11 +426,11 @@ footer p {
           align-items: center;
 }
 
-.about-page .about .services ul li {
+.skills-page .skills .services ul li {
   text-align: center;
 }
 
-.about-page .about .services ul li p {
+.skills-page .skills .services ul li p {
   padding: 0 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
