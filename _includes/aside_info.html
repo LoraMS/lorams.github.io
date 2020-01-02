@@ -1,0 +1,86 @@
+<div class="info">
+  <!-- <img src="{{ permalink }}/assets/images/profile-cartoon.jpg" alt="profile image"> -->
+  <img src="{{ permalink }}/assets/images/pngfuel.com.png" style="border: 1px solid black;" alt="profile-image">
+  <div class="general-info">
+    {% if page.lang == "en" %}
+    <h2>General Information</h2>
+    {% elsif page.lang == "bg" %}
+    <h2>Основни данни</h2>
+    {% endif%}
+    <ul>
+      <li>
+        <i class="far fa-user fa-lg"></i>
+        <div>
+          {% if page.lang == "en" %}
+          <span>Name: </span>
+          Lora Shopova
+          {% elsif page.lang == "bg" %}
+          <span>Име: </span>
+          Лора Шопова
+          {% endif%}
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-map-marker-alt fa-lg"></i>
+        <div>
+          {% if page.lang == "en" %}
+          <span>Location: </span>
+          Sofia, Bulgaria
+          {% elsif page.lang == "bg" %}
+          <span>Адрес: </span>
+          София, България
+          {% endif%}
+        </div>
+      </li>
+      <li>
+        <i class="far fa-envelope fa-lg"></i>
+        <div>
+          {% if page.lang == "en" %}
+          <span>Email: </span>
+          {% elsif page.lang == "bg" %}
+          <span>Поща: </span>
+          {% endif%}
+          lshopowa@gmail.com
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-mobile-alt fa-lg"></i>
+        <div>
+          {% if page.lang == "en" %}
+          <span>Phone: </span>
+          {% elsif page.lang == "bg" %}
+          <span>Телефон: </span>
+          {% endif%}
+          +359 887 000000
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-laptop-code fa-sm"></i>
+        <div>
+          {% if page.lang == "en" %}
+          <span>Website: </span>
+          {% elsif page.lang == "bg" %}
+          <span>Страница: </span>
+          {% endif%}
+          <a href="https://lorams.github.io/">lorams.github.io/</a>
+        </div>
+      </li>
+    </ul>
+    <div class="social-info">
+      <a href="https://www.facebook.com/profile.php?id=100016618171842" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f fa-lg"></i>
+      </a>
+      <a href="https://github.com/LoraMS" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCOsUtpaok15wrZjGtocml3w?view_as=subscriber" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-codepen fa-lg"></i>
+        <!-- <i class="fab fa-stack-overflow fa-lg"></i> -->
+      </a>
+    </div>
+  </div>
+</div>
