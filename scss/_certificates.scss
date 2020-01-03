@@ -1,0 +1,66 @@
+.certificates-page {
+    .certificates {
+        flex: 1;
+        padding: 3rem 5rem 0;
+        color: $color-header;
+
+        h1 {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 4rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 1rem;
+
+            .gallery__item{
+                margin: 1rem;
+                border: 1px solid lightgrey;
+            }
+
+            .gallery__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .gallery__item--1 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+
+            .gallery__item--2 {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+
+            .gallery__item--3 {
+                grid-column-start: 7;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+
+            .gallery__item--4 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 5;
+                grid-row-end: 9;
+            }
+
+            .gallery__item--5 {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                grid-row-start: 5;
+                grid-row-end: 9;
+            }
+        }
+    }
+}
