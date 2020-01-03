@@ -340,6 +340,10 @@ ul {
   list-style-type: none;
 }
 
+.hide {
+  display: none;
+}
+
 header .navigation {
   width: 80%;
   margin: 0 auto;
@@ -921,5 +925,39 @@ footer p {
 .certificates-page .certificates .gallery .gallery-item figcaption a:hover {
   color: #fff;
   background-color: #c9c6be;
+}
+
+.contacts-page .contacts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3rem 5rem 0;
+  color: #62289b;
+}
+
+.contacts-page .contacts h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacts-page .contacts input[type=text], .contacts-page .contacts input[type=email], .contacts-page .contacts textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contacts-page .contacts input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contacts-page .contacts input[type=submit]:hover {
+  background-color: #45a049;
 }
 /*# sourceMappingURL=style.css.map */
