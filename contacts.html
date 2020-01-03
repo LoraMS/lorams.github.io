@@ -12,23 +12,25 @@ ref: contacts
             <h1>
                 Contacts
             </h1>
-            <form action="https://formspree.io/xeqedzoj" method="POST">
+            <form action="https://formspree.io/xeqedzoj" method="POST" onsubmit="return submitUserForm();">
                 <label>
                     Your email:
-                    <input type="text" name="_replyto">
+                    <input type="text" name="name" placeholder="Enter your name" required>
                 </label>
                 <label>
                     Your Email:
-                    <input type="email" name="_replyto">
+                    <input type="email" name="email" placeholder="Enter your email" required>
                 </label>
                 <label>
                     Your message:
-                    <textarea name="message"></textarea>
+                    <textarea name="message" placeholder="Write your message" rows="4" required></textarea>
                 </label>
+                <div class="g-recaptcha" data-sitekey="6LfCKMwUAAAAADtqHcHARIV2XdDLCD3Kex8jgdAQ"></div>
+                <div id="g-recaptcha-error"></div>
+                <button type="submit">Send</button>
                 <div class="success hide">
                     Your message was sent successfully. Thanks!
                 </div>
-                <button type="submit">Send</button>
             </form>
         </div>
     </section>

@@ -942,22 +942,10 @@ footer p {
 
 .contacts-page .contacts input[type=text], .contacts-page .contacts input[type=email], .contacts-page .contacts textarea {
   width: 100%;
-  padding: 12px;
+  padding: 1rem;
   border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0.625rem;
+  margin-bottom: 1rem;
   resize: vertical;
-}
-
-.contacts-page .contacts input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.contacts-page .contacts input[type=submit]:hover {
-  background-color: #45a049;
 }
 /*# sourceMappingURL=style.css.map */
