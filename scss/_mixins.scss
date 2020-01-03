@@ -1,32 +1,20 @@
-@mixin profile-image-border($width: 15rem, $height: 4rem, $top: -0.9rem, $right: -0.5rem, $left: -0.5rem, $bottom: -0.2rem) {
-    position: relative;
+// @mixin profile-image-border($width: 15rem, $height: 4rem, $top: -0.9rem, $right: -0.5rem, $left: -0.5rem, $bottom: -0.2rem) {
+//     position: relative;
 
-    // &:after {
-    //     display: block;
-    //     content: "";
-    //     width: $width;
-    //     height: $height;
-    //     position: absolute;
-    //     bottom: $bottom;
-    //     right: $right;
-    //     border-bottom: 0.5rem solid $color3;
-    //     border-right: 0.5rem solid $color3;
-    // }
+//     &:before {
+//         display: block;
+//         content: "";
+//         width: $width;
+//         height: $height;
+//         position: absolute;
+//         top: $top;
+//         right: $left;
+//         border-top: 1rem solid $color-home;
+//         border-right: 1rem solid $color-home;
+//     }
+// }
 
-    &:before {
-        display: block;
-        content: "";
-        width: $width;
-        height: $height;
-        position: absolute;
-        top: $top;
-        right: $left;
-        border-top: 1rem solid $color-home;
-        border-right: 1rem solid $color-home;
-    }
-}
-
-@mixin button($color: white) {
+@mixin button ($color: #fff){
     a {
         padding: 0.625rem 1.25rem;
 
@@ -39,5 +27,25 @@
             color: #fff;
             background-color: $color;
         }
+    }
+}
+
+@mixin scrollbar {
+    height: 79vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+        background-color: rgb(238, 238, 238);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-info-bg;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(136, 187, 214, 0.5);
+        border-radius: 10px;
     }
 }
