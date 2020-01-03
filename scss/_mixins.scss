@@ -31,13 +31,13 @@
         padding: 0.625rem 1.25rem;
 
         border: 2px solid $color;
-        color: #fff;
-        background-color: $color;
+        color: $color;
+        background-color: #fff;
         border-radius: 0.3rem;
 
         &:hover {
-            color: $color;
-            background-color: #fff;
+            color: #fff;
+            background-color: $color;
         }
     }
 }
