@@ -34,7 +34,7 @@
     height: 79vh;
     overflow-y: scroll;
     scrollbar-width: thin;
-    scrollbar-color: rgba(136, 187, 214, 0.5) $color-info-bg;
+    scrollbar-color: $color-info-bg rgba(136, 187, 214, 0.5);
 
     &::-webkit-scrollbar {
         width: 1rem;
