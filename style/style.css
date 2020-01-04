@@ -637,7 +637,7 @@ footer p {
   height: 79vh;
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: rgba(136, 187, 214, 0.5) #88bbd6;
+  scrollbar-color: #88bbd6 rgba(136, 187, 214, 0.5);
 }
 
 .skills-page .skills-description::-webkit-scrollbar {
@@ -874,7 +874,7 @@ footer p {
   height: 79vh;
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: rgba(136, 187, 214, 0.5) #88bbd6;
+  scrollbar-color: #88bbd6 rgba(136, 187, 214, 0.5);
 }
 
 .certificates-page .certificates::-webkit-scrollbar {
@@ -959,14 +959,19 @@ footer p {
   margin-top: 0.625rem;
   margin-bottom: 1rem;
   resize: vertical;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
 }
 
-.contacts-page .contacts form .g-recaptcha {
-  width: 50%;
+.contacts-page .contacts form textarea {
+  resize: none;
+  overflow: hidden;
 }
 
 .contacts-page .contacts form button {
-  width: 50%;
+  width: 100%;
   padding: 1rem;
   margin-top: 2rem;
   border: 2px solid #88bbd6;
