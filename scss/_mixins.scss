@@ -32,7 +32,9 @@
 
 @mixin scrollbar {
     height: 79vh;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(136, 187, 214, 0.5) $color-info-bg;
 
     &::-webkit-scrollbar {
         width: 1rem;

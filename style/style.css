@@ -635,7 +635,9 @@ footer p {
   padding: 3rem 5rem 0;
   color: #62289b;
   height: 79vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 187, 214, 0.5) #88bbd6;
 }
 
 .skills-page .skills-description::-webkit-scrollbar {
@@ -870,7 +872,9 @@ footer p {
   padding: 3rem 5rem 0;
   color: #62289b;
   height: 79vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 187, 214, 0.5) #88bbd6;
 }
 
 .certificates-page .certificates::-webkit-scrollbar {
@@ -940,12 +944,40 @@ footer p {
   font-family: 'Roboto', sans-serif;
 }
 
-.contacts-page .contacts input[type=text], .contacts-page .contacts input[type=email], .contacts-page .contacts textarea {
+.contacts-page .contacts form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contacts-page .contacts form input[type=text],
+.contacts-page .contacts form input[type=email],
+.contacts-page .contacts form textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 0.625rem 1rem;
   border: 1px solid #ccc;
   margin-top: 0.625rem;
   margin-bottom: 1rem;
   resize: vertical;
+}
+
+.contacts-page .contacts form .g-recaptcha {
+  width: 50%;
+}
+
+.contacts-page .contacts form button {
+  width: 50%;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 2px solid #88bbd6;
+  color: #88bbd6;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.contacts-page .contacts form button:hover {
+  color: #fff;
+  background-color: #88bbd6;
 }
 /*# sourceMappingURL=style.css.map */
