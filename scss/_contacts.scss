@@ -20,7 +20,6 @@
             textarea {
                 width: 100%;
                 padding: 0.625rem 1rem;
-                border: 1px solid #ccc;
                 margin-top: 0.625rem;
                 margin-bottom: 1rem;
                 resize: vertical;
@@ -34,6 +33,14 @@
                 resize: none;
                 overflow: hidden;
             }
+
+            // input:valid {
+            //     border-bottom: 2px solid #090;
+            // }
+
+            // input:invalid {
+            //     border-bottom: 2px solid #f00;
+            // }
 
             button {
                 width: 100%;

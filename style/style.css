@@ -955,7 +955,6 @@ footer p {
 .contacts-page .contacts form textarea {
   width: 100%;
   padding: 0.625rem 1rem;
-  border: 1px solid #ccc;
   margin-top: 0.625rem;
   margin-bottom: 1rem;
   resize: vertical;
