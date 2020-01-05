@@ -8,28 +8,40 @@ function validateForm() {
         document.getElementById('name-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         name.focus(); 
         return false; 
-    } 
+    } else{
+        document.getElementById('name-error').innerHTML = '';
+    }
+
     if (email.value == "") {
         document.getElementById('email-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         email.focus(); 
         return false; 
-    } 
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
+    } else{
+        document.getElementById('email-error').innerHTML = '';
+    }
+
+    if (email.value.indexOf("@", 0) < 0) { 
         document.getElementById('email-error').innerHTML = '<span style="color:red;">Enter a valid email address.</span>';
         email.focus(); 
         return false; 
-    }    
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
+    }  else{
+        document.getElementById('email-error').innerHTML = '';
+    }
+
+    if (email.value.indexOf(".", 0) < 0) { 
         document.getElementById('email-error').innerHTML = '<span style="color:red;">Enter a valid email address.</span>';
         email.focus(); 
         return false; 
-    }    
+    }  else{
+        document.getElementById('email-error').innerHTML = '';
+    }
+
     if (message.value == ""){
         document.getElementById('message-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         message.focus(); 
         return false; 
+    } else{
+        document.getElementById('message-error').innerHTML = '';
     }
 
     return true;
