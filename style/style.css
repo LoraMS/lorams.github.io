@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Coming+Soon&display=swap");
+@font-face {
+  font-family: "True Typewriter Polyglott";
+  src: url("./../assets/fonts/TruetypewriterPolyglott-mELa.ttf") format("ttf");
+}
+
 * {
   padding: 0;
   margin: 0;

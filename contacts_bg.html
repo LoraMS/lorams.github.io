@@ -5,6 +5,33 @@ lang: bg
 ref: contacts
 ---
 
-<h1>
-    здравейте
-</h1>
+<main>
+    <section class="contacts-page">
+        {% include aside_info.html %}
+        <div class="contacts">
+            <h1>
+                Контакти
+            </h1>
+            <form action="https://formspree.io/xeqedzoj" method="POST" onsubmit="return submitUserForm();">
+                <label>
+                    <!-- Your Name: -->
+                    <input type="text" id="name" name="name" placeholder="Име и фамилия" minlength="2" maxlength="100" pattern="^[А-Яа-я]+\s[А-Яа-я]+$"  title="Напишете валидно име и фамилия съдържащи само букви между 2 и 100 символа" required>
+                </label>
+                <div id="name-error"></div>
+                <label>
+                    <!-- Your Email: -->
+                    <input type="email" id="email" name="email" placeholder="Имейл адрес" pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Въведете валиден имейл адрес" required>
+                </label>
+                <div id="email-error"></div>
+                <label>
+                    <!-- Your Message: -->
+                    <textarea name="message" id="message" placeholder="Съобщение" maxlength="200" required></textarea>
+                </label>
+                <div id="message-error"></div>
+                <div class="g-recaptcha" data-theme="light" data-sitekey="6LfCKMwUAAAAADtqHcHARIV2XdDLCD3Kex8jgdAQ"></div>
+                <div id="g-recaptcha-error"></div>
+                <button id="submit" type="submit" onclick="validateForm()">Изпрати</button>
+            </form>
+        </div>
+    </section>
+</main>
