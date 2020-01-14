@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Coming+Soon&display=swap");
 @font-face {
-  font-family: "True Typewriter Polyglott";
-  src: url("./../assets/fonts/TruetypewriterPolyglott-mELa.ttf") format("ttf");
+  font-family: "Celestina";
+  src: url("./../assets/fonts/Celestina/Pinata - Celestina.otf") format("otf");
 }
 
 * {
@@ -91,6 +91,42 @@ html {
   }
   to {
     width: 90%;
+  }
+}
+
+@keyframes less {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes less {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes sass {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes sass {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
   }
 }
 
@@ -752,10 +788,34 @@ footer p {
 
 .skills-page .skills-description .skills-bar ul li.skills-bar-item .bootstrap {
   width: 90%;
-  animation: html 2s;
+  animation: bootstrap 2s;
   -webkit-animation: bootstrap 2s;
   -moz-animation: bootstrap 2s;
   -o-animation: bootstrap 2s;
+  height: 2rem;
+  padding: 0.3rem;
+  position: absolute;
+  background-color: #88bbd6;
+}
+
+.skills-page .skills-description .skills-bar ul li.skills-bar-item .less {
+  width: 80%;
+  animation: less 2s;
+  -webkit-animation: less 2s;
+  -moz-animation: less 2s;
+  -o-animation: less 2s;
+  height: 2rem;
+  padding: 0.3rem;
+  position: absolute;
+  background-color: #88bbd6;
+}
+
+.skills-page .skills-description .skills-bar ul li.skills-bar-item .sass {
+  width: 80%;
+  animation: sass 2s;
+  -webkit-animation: sass 2s;
+  -moz-animation: sass 2s;
+  -o-animation: sass 2s;
   height: 2rem;
   padding: 0.3rem;
   position: absolute;

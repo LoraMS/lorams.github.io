@@ -89,10 +89,34 @@
 
                     .bootstrap {
                         width: 90%;
-                        animation: html 2s;
+                        animation: bootstrap 2s;
                         -webkit-animation: bootstrap 2s;
                         -moz-animation: bootstrap 2s;
                         -o-animation: bootstrap 2s;
+                        height: 2rem;
+                        padding: 0.3rem;
+                        position: absolute;
+                        background-color: $color-info-bg;  
+                    }
+
+                    .less {
+                        width: 80%;
+                        animation: less 2s;
+                        -webkit-animation: less 2s;
+                        -moz-animation: less 2s;
+                        -o-animation: less 2s;
+                        height: 2rem;
+                        padding: 0.3rem;
+                        position: absolute;
+                        background-color: $color-info-bg;  
+                    }
+
+                    .sass {
+                        width: 80%;
+                        animation: sass 2s;
+                        -webkit-animation: sass 2s;
+                        -moz-animation: sass 2s;
+                        -o-animation: sass 2s;
                         height: 2rem;
                         padding: 0.3rem;
                         position: absolute;
