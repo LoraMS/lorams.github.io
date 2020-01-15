@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Coming+Soon&display=swap");
 @font-face {
-  font-family: "Celestina";
-  src: url("./../assets/fonts/Celestina/Pinata - Celestina.otf") format("otf");
+  font-family: "Dacha";
+  src: url("./../assets/fonts/Dacha.otf") format("opentype");
 }
 
 * {
@@ -606,6 +606,10 @@ footer p {
 
 .heading div.animated-heading h2:nth-child(3) {
   margin-bottom: 3.75rem;
+}
+
+.heading div.animated-heading.bg-heading h2 {
+  font-family: 'Dacha', sans-serif;
 }
 
 .heading div.animated-heading .button a {

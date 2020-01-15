@@ -99,6 +99,10 @@
 
         }
 
+        &.bg-heading h2{
+            font-family: 'Dacha', sans-serif;
+        }
+
         .button {
             @include button($color-home);
         }
