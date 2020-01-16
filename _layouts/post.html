@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body>
+
+
+    <header>
+        <section class="navigation">
+            <div class="logo">
+                <a href="/">
+                    <i class="fas fa-code"></i>
+                    <span>Lora Shopova</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    {% assign url = page.url|remove:'.html' %}
+                    {% for menu in site.t[page.lang] offset:1 %}
+                    <li class="nav-item {% if url == menu[1].url %}active{% endif %}"><a
+                            href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <div>
+        <a href="./../projects.html">Back to Projects</a>
+    </div>
+    <div>
+        {% if page.lang == 'en' %}
+        <a href="/projectsbg/{{page.translation}}">Read in BG</a>
+        {% elsif page.lang == 'bg' %}
+        <a href="/projects/{{page.translation}}">Read in EN</a>
+        {% endif %}
+    </div>
+
+    {{ content }}
+
+    <aside class="same-category">
+
+    </aside>
+
+    {% include footer.html  %}
+</body>
+
+</html>
