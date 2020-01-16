@@ -1,0 +1,29 @@
+.projects-page {
+    .projects {
+        flex: 1;
+        padding: 3rem 5rem 0;
+        @include scrollbar;
+
+        h1 {
+            @include page-heading;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 30%;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+                border: 1px solid red;
+                height: 300px;  
+            }
+        }
+
+    }
+}
+
+.btn-post{
+    text-align: end;
+    @include button($color-info-bg);
+}
