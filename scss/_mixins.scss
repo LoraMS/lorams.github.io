@@ -14,7 +14,7 @@
 //     }
 // }
 
-@mixin button ($color: #fff){
+@mixin button ($color: #fff) {
     a {
         padding: 0.625rem 1.25rem;
 
@@ -50,4 +50,9 @@
         background: rgba(136, 187, 214, 0.5);
         border-radius: 10px;
     }
+}
+
+@mixin page-heading {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }

@@ -964,7 +964,6 @@ footer p {
 .certificates-page .certificates h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 4rem;
 }
 
 .certificates-page .certificates .gallery {
@@ -998,6 +997,70 @@ footer p {
 .certificates-page .certificates .gallery .gallery-item figcaption a:hover {
   color: #fff;
   background-color: #c9c6be;
+}
+
+.projects-page .projects {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3rem 5rem 0;
+  height: 79vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #88bbd6 rgba(136, 187, 214, 0.5);
+}
+
+.projects-page .projects::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #eeeeee;
+}
+
+.projects-page .projects::-webkit-scrollbar-thumb {
+  background-color: #88bbd6;
+  border-radius: 10px;
+}
+
+.projects-page .projects::-webkit-scrollbar-track {
+  background: rgba(136, 187, 214, 0.5);
+  border-radius: 10px;
+}
+
+.projects-page .projects h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.projects-page .projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-page .projects ul li {
+  width: 30%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid red;
+  height: 300px;
+}
+
+.btn-post {
+  text-align: end;
+}
+
+.btn-post a {
+  padding: 0.625rem 1.25rem;
+  border: 2px solid #88bbd6;
+  color: #88bbd6;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+.btn-post a:hover {
+  color: #fff;
+  background-color: #88bbd6;
 }
 
 .contacts-page .contacts {
