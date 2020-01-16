@@ -5,17 +5,18 @@ body {
 main {
   width: 80%;
   margin: 0 auto;
-  section{
+
+  section {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-.hide{
+.hide {
   display: none;
 }
