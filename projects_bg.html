@@ -5,6 +5,39 @@ lang: bg
 ref: projects
 ---
 
-<h1>
-    zdravejte proekti
-</h1>
+<main>
+    <section class="projects-page">
+        {% include aside_info.html %}
+        <div class="projects">
+            <h1>Моите проекти</h1>
+            <ul>
+
+
+                {% for project in site.data.projects %}
+                    <li>
+                        <img src="/assets/images/{{project.image}}" alt="project-image">
+                        <h6>{{project.name}}</h6>
+                        <p>{{project.info.bg}}</p>
+                        <a href="{{project.link.bg}}">Прочети повече</a>
+                    </li>
+                {% endfor %}
+
+
+            </ul>
+
+
+
+            {% assign posts=site.posts | where:"lang", page.lang %}
+<ul>
+{% for post in posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}
+</ul>  
+
+
+
+        </div>
+    </section>
+</main>

@@ -1,8 +1,16 @@
 - image: star.png
   name: My Cyisine
-  link: /projects/mycuisine
-  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  link: 
+    en: /projects/mycuisine
+    bg: /projectsbg/mycuisinebg
+  info: 
+    en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+    bg: Проект с дълго дълго описание
 - image: star.png
   name: Gallery
-  link: /projects/gallery
-  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  info: 
+    en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+    bg: Проект с дълго дълго описание
