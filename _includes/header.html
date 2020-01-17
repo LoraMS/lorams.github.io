@@ -8,11 +8,13 @@
         </div>
         <nav>
             <div class="lang">
-                <!-- {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                 {% for post in posts %} 
                 <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}">
+                    <img src="./../assets/images/{{post.lang}}.png" alt="flag">
                     {{ post.lang }}
-                </a> {% endfor %} -->
+                </a>
+                {% endfor %}
 
                 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
                 {% for page in pages %}
