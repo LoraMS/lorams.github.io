@@ -8,22 +8,30 @@
 
     {{ content }}
 
-    <aside class="group-category">
-
+    <aside class="group-by-category">
+        <div class="sub-nav">
+            {% if page.lang == 'en' %}
+            <h3>Related projects</h3>
+            <h3><a href="./../projects.html">Back to all projects</a></h3>
+            {% elsif page.lang == 'bg' %}
+            <h3>Podobni proekti</h3>
+            <h3><a href="./../projects_bg.html">Kym Proekti</a></h3>
+            {% endif %}
+        </div>
         {% assign posts=site.posts | group_by: 'group' %}
         {% for group in posts %}
-            {% if group.size > 1 %}
-                <h5>{{ group.name | upcase }}</h5>
-                <ul>
-                    {% for item in group.items %}
-                        {% if page.lang == item.lang %}
-                            <li>
-                                <a href="{{ item.url }}">{{ item.title }}</a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+        {% if group.size > 1 and group.name ==page.group %}
+        <h5>{{ group.name | upcase }}</h5>
+        <ul>
+            {% for item in group.items %}
+            {% if page.lang == item.lang %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
             {% endif %}
+            {% endfor %}
+        </ul>
+        {% endif %}
         {% endfor %}
     </aside>
 
