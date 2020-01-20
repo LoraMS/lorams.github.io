@@ -1,12 +1,15 @@
-- image: star.png
-  name: My Cyisine
+- image: Screenshot1_2020-01-19 MyCuisine.jpg
+  name: My Cuisine
   link: 
     en: /projects/mycuisine
     bg: /projectsbg/mycuisinebg
   info: 
-    en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+    en: Single-page application sliced from the given design.
     bg: Проект с дълго дълго описание
-- image: star.png
+  tags:
+    en: Design, Javascript
+    bg: Design, Javascript
+- image: Screenshot_2020-01-19 MyCuisine.jpg
   name: Gallery
   link: 
     en: /projects/gallery
@@ -14,3 +17,6 @@
   info: 
     en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
     bg: Проект с дълго дълго описание
+  tags:
+    en: Javascript, jQuery, Bootstrap, Kinvey
+    bg: Javascript, jQuery, Bootstrap, Kinvey

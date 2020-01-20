@@ -13,10 +13,14 @@ ref: projects
             <ul>
                 {% for project in site.data.projects %}
                 <li>
-                    <img src="/assets/images/{{project.image}}" alt="project-image">
-                    <h6>{{project.name}}</h6>
-                    <p>{{project.info.en}}</p>
-                    <a href="{{project.link.en}}">Read more</a>
+                    <img src="/assets/images/projects/{{project.image}}" alt="project-image">
+                    <div class="overlay">
+                        <div class="card">
+                            <h6>{{project.name}}</h6>
+                            <p>{{project.info.en}}</p>
+                            <a href="{{project.link.en}}">Learn more</a>
+                        </div>
+                    </div>
                 </li>
                 {% endfor %}
             </ul>

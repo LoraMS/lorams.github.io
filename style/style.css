@@ -1039,28 +1039,74 @@ footer p {
 }
 
 .projects-page .projects ul li {
-  width: 30%;
+  width: 46%;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid red;
-  height: 300px;
+  text-align: center;
+  position: relative;
 }
 
-.btn-post {
-  text-align: end;
+.projects-page .projects ul li:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
 }
 
-.btn-post a {
-  padding: 0.625rem 1.25rem;
-  border: 2px solid #88bbd6;
-  color: #88bbd6;
-  background-color: #fff;
-  border-radius: 0.3rem;
+.projects-page .projects ul li img {
+  max-width: 100%;
+  height: auto;
 }
 
-.btn-post a:hover {
+.projects-page .projects ul li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100%;
+  right: 0;
   color: #fff;
-  background-color: #88bbd6;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(23, 103, 121, 0.6);
+}
+
+.projects-page .projects ul li .overlay .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-page .projects ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 3px;
+  padding: 0.625rem 1rem;
+}
+
+.projects-page .projects ul li a:hover {
+  background: #fff;
+  border: #88bbd6;
+  color: #88bbd6;
+}
+
+.sub-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts-page .contacts {

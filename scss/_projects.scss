@@ -8,22 +8,79 @@
             @include page-heading;
         }
 
-        ul{
+        ul {
             display: flex;
             flex-wrap: wrap;
-            li{
-                width: 30%;
+
+            li {
+                width: 46%;
                 margin-right: 2rem;
                 margin-bottom: 2rem;
-                border: 1px solid red;
-                height: 300px;  
+                text-align: center;
+                position: relative;
+
+                &:hover .overlay {
+                    opacity: 1;
+                    bottom: 0;
+                    height: 100%;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 100%;
+                    right: 0;
+                    color: #fff;
+                    height: 0;
+                    width: 100%;
+                    opacity: 0;
+                    overflow: hidden;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    background-color: rgba(23, 103, 121, 0.6);
+
+
+                    .card {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    background: transparent;
+                    border-radius: 3px;
+                    padding: 0.625rem 1rem;
+
+                    &:hover {
+                        background: #fff;
+                        border: $color-info-bg;
+                        color: $color-info-bg;
+                    }
+                }
             }
         }
 
     }
 }
 
-.btn-post{
-    text-align: end;
-    @include button($color-info-bg);
+.sub-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
