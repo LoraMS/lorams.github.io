@@ -17,7 +17,6 @@
 @mixin button ($color: #fff) {
     a {
         padding: 0.625rem 1.25rem;
-
         border: 2px solid $color;
         color: $color;
         background-color: #fff;
@@ -55,4 +54,16 @@
 @mixin page-heading {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+@mixin text-overlay($top: 0, $left: 0, $width: 100%, $sec: 0.5s) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    opacity: 0;
+    -webkit-transition: all $sec ease-in-out 0s;
+    -moz-transition: all $sec ease-in-out 0s;
+    -o-transition: all $sec ease-in-out 0s;
+    transition: all $sec ease-in-out 0s;
 }

@@ -8,6 +8,34 @@
             @include page-heading;
         }
 
+        .projects-filter {
+            text-align: center;
+            padding: 0 5rem 2rem;
+
+            .btn-filter {
+                padding: 1rem 1.25rem;
+                border: 2px solid #c9c6be;
+                color: #b3b0aa;
+                background-color: #fff;
+                border-radius: 0.3rem;
+                font-size: 0.875rem;
+                margin-bottom: 0.625rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all .5s ease;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #c9c6be;
+                }
+
+                &.btn-active {
+                    color: #fff;
+                    background-color: #929089;
+                }
+            }
+        }
+
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -18,11 +46,22 @@
                 margin-bottom: 2rem;
                 text-align: center;
                 position: relative;
+                overflow: hidden;
 
                 &:hover .overlay {
                     opacity: 1;
-                    bottom: 0;
-                    height: 100%;
+                }
+
+                &:hover .card {
+                    top: 40%;
+                    left: 50%;
+                    opacity: 1;
+                }
+
+                &:hover .card-button {
+                    top: 70%;
+                    left: 50%;
+                    opacity: 1;
                 }
 
                 img {
@@ -31,46 +70,41 @@
                 }
 
                 .overlay {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 100%;
+                    @include text-overlay();
+                    bottom: 0;
                     right: 0;
-                    color: #fff;
-                    height: 0;
-                    width: 100%;
-                    opacity: 0;
-                    overflow: hidden;
-                    -webkit-transition: all 0.5s ease;
-                    -moz-transition: all 0.5s ease;
-                    -o-transition: all 0.5s ease;
-                    transition: all 0.5s ease;
+                    height: 100%;
                     background-color: rgba(23, 103, 121, 0.6);
-
-
-                    .card {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        text-align: center;
-                    }
+                    // background-color: rgba(201, 198, 190, 0.8);
                 }
 
-                a {
-                    text-transform: uppercase;
+                .card {
                     color: #fff;
-                    border: 1px solid #fff;
-                    background: transparent;
-                    border-radius: 3px;
-                    padding: 0.625rem 1rem;
+                    @include text-overlay(20%, 50%, 100%, 0.3s);
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
 
-                    &:hover {
-                        background: #fff;
-                        border: $color-info-bg;
-                        color: $color-info-bg;
+                .card-button {
+                    @include text-overlay(80%, 50%, 100%, 0.3s);
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+
+                    a {
+                        text-transform: uppercase;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        background: transparent;
+                        border-radius: 3px;
+                        padding: 0.625rem 1rem;
+
+                        &:hover {
+                            background: #fff;
+                            border: $color-info-bg;
+                            color: $color-info-bg;
+                        }
                     }
                 }
             }

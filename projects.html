@@ -10,16 +10,30 @@ ref: projects
         {% include aside_info.html %}
         <div class="projects">
             <h1>My Projects</h1>
+            <div class="projects-filter">
+                <button class="btn-filter btn-active" data-class="all">Show All</button>
+                <button class="btn-filter" data-class="frontend">Front-end</button>
+                <button class="btn-filter" data-class="jsapp">Javascript</button>
+                <button class="btn-filter" data-class="node-express">Node/Express</button>
+                <button class="btn-filter" data-class="react">React</button>
+                <button class="btn-filter" data-class="angular">Angular</button>
+                <button class="btn-filter" data-class="wordpress">Wordpress</button>
+                <button class="btn-filter" data-class="jekyll">Jekyll</button>
+                <button class="btn-filter" data-class="html-css">HTML/CSS</button>
+                <button class="btn-filter" data-class="php">PHP</button>
+                <button class="btn-filter" data-class="symfony">Symfony</button>
+            </div>
             <ul>
                 {% for project in site.data.projects %}
-                <li>
+                <li class="projects-container" data-class="{{project.data}}">
+                    <div class="overlay"></div>
                     <img src="/assets/images/projects/{{project.image}}" alt="project-image">
-                    <div class="overlay">
-                        <div class="card">
-                            <h6>{{project.name}}</h6>
-                            <p>{{project.info.en}}</p>
-                            <a href="{{project.link.en}}">Learn more</a>
-                        </div>
+                    <div class="card">
+                        <h6>{{project.name}}</h6>
+                        <p>{{project.tags}}</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{project.link.en}}">Learn more</a>
                     </div>
                 </li>
                 {% endfor %}

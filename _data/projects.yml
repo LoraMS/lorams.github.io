@@ -6,9 +6,8 @@
   info: 
     en: Single-page application sliced from the given design.
     bg: Проект с дълго дълго описание
-  tags:
-    en: Design, Javascript
-    bg: Design, Javascript
+  tags: Front-end Development, Javascript, jQuery, Bootstrap
+  data: frontend
 - image: Screenshot_2020-01-19 MyCuisine.jpg
   name: Gallery
   link: 
@@ -17,6 +16,5 @@
   info: 
     en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
     bg: Проект с дълго дълго описание
-  tags:
-    en: Javascript, jQuery, Bootstrap, Kinvey
-    bg: Javascript, jQuery, Bootstrap, Kinvey
+  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  data: jsapp

@@ -988,15 +988,15 @@ footer p {
 
 .certificates-page .certificates .gallery .gallery-item figcaption a {
   padding: 0.625rem 1.25rem;
-  border: 2px solid #c9c6be;
-  color: #c9c6be;
+  border: 2px solid #929089;
+  color: #929089;
   background-color: #fff;
   border-radius: 0.3rem;
 }
 
 .certificates-page .certificates .gallery .gallery-item figcaption a:hover {
   color: #fff;
-  background-color: #c9c6be;
+  background-color: #929089;
 }
 
 .projects-page .projects {
@@ -1030,6 +1030,35 @@ footer p {
   font-family: 'Roboto', sans-serif;
 }
 
+.projects-page .projects .projects-filter {
+  text-align: center;
+  padding: 0 5rem 2rem;
+}
+
+.projects-page .projects .projects-filter .btn-filter {
+  padding: 1rem 1.25rem;
+  border: 2px solid #c9c6be;
+  color: #b3b0aa;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.625rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.projects-page .projects .projects-filter .btn-filter:hover {
+  color: #fff;
+  background-color: #c9c6be;
+}
+
+.projects-page .projects .projects-filter .btn-filter.btn-active {
+  color: #fff;
+  background-color: #929089;
+}
+
 .projects-page .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,12 +1073,23 @@ footer p {
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .projects-page .projects ul li:hover .overlay {
   opacity: 1;
-  bottom: 0;
-  height: 100%;
+}
+
+.projects-page .projects ul li:hover .card {
+  top: 40%;
+  left: 50%;
+  opacity: 1;
+}
+
+.projects-page .projects ul li:hover .card-button {
+  top: 70%;
+  left: 50%;
+  opacity: 1;
 }
 
 .projects-page .projects ul li img {
@@ -1061,28 +1101,42 @@ footer p {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 100%;
-  right: 0;
-  color: #fff;
-  height: 0;
   width: 100%;
   opacity: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  bottom: 0;
+  right: 0;
+  height: 100%;
   background-color: rgba(23, 103, 121, 0.6);
 }
 
-.projects-page .projects ul li .overlay .card {
+.projects-page .projects ul li .card {
+  color: #fff;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-.projects-page .projects ul li a {
+.projects-page .projects ul li .card-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.projects-page .projects ul li .card-button a {
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
@@ -1091,7 +1145,7 @@ footer p {
   padding: 0.625rem 1rem;
 }
 
-.projects-page .projects ul li a:hover {
+.projects-page .projects ul li .card-button a:hover {
   background: #fff;
   border: #88bbd6;
   color: #88bbd6;
