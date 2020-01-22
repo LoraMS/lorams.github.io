@@ -1,110 +1,3 @@
-// @keyframes type {
-//     0% {
-//         width: 0;
-//     }
-
-//     99.9% {
-//         border-right: .15em solid blue;
-//     }
-
-//     100% {
-//         border: none;
-//     }
-// }
-
-// @-webkit-keyframes type {
-//     0% {
-//         width: 0;
-//     }
-
-//     99.9% {
-//         border-right: .15em solid blue;
-//     }
-
-//     100% {
-//         border: none;
-//     }
-// }
-
-// @keyframes type2 {
-//     0% {
-//         width: 0;
-//     }
-
-//     1% {
-//         opacity: 1;
-//     }
-
-//     99.9% {
-//         border-right: .15em solid blue;
-//     }
-
-//     100% {
-//         opacity: 1;
-//         border: none;
-//     }
-// }
-
-// @-webkit-keyframes type2 {
-//     0% {
-//         width: 0;
-//     }
-
-//     1% {
-//         opacity: 1;
-//     }
-
-//     99.9% {
-//         border-right: .15em solid blue;
-//     }
-
-//     100% {
-//         opacity: 1;
-//         border: none;
-//     }
-// }
-
-// @keyframes type3 {
-//     0% {
-//         width: 0;
-//     }
-
-//     1% {
-//         opacity: 1;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// @-webkit-keyframes type3 {
-//     0% {
-//         width: 0;
-//     }
-
-//     1% {
-//         opacity: 1;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes blink {
-//     50% {
-//         border-color: transparent;
-//     }
-// }
-
-// @-webkit-keyframes blink {
-//     50% {
-//         border-color: tranparent;
-//     }
-// }
-
-
 // animation rotate 
 @-webkit-keyframes rotate {
     from {
@@ -117,6 +10,26 @@
 }
 
 @keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
     from {
         -webkit-transform: rotate(0deg);
     }
@@ -697,5 +610,56 @@
 
     to {
         width: 80%
+    }
+}
+
+// animation filtering with fadeIn 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

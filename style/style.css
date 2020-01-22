@@ -292,6 +292,24 @@ html {
   }
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   font: normal 16px/1.5 'Open Sans', cursive;
 }
@@ -1074,6 +1092,12 @@ footer p {
   text-align: center;
   position: relative;
   overflow: hidden;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 .projects-page .projects ul li:hover .overlay {
@@ -1095,6 +1119,11 @@ footer p {
 .projects-page .projects ul li img {
   max-width: 100%;
   height: auto;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .projects-page .projects ul li .overlay {
