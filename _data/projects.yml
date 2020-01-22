@@ -3,18 +3,82 @@
   link: 
     en: /projects/mycuisine
     bg: /projectsbg/mycuisinebg
-  info: 
-    en: Single-page application sliced from the given design.
-    bg: Проект с дълго дълго описание
   tags: Front-end Development, Javascript, jQuery, Bootstrap
   data: frontend
+- image: Screenshot_2020-01-22 Summer Photos1.png
+  name: Summer Photos
+  link: 
+    en: /projects/mycuisine
+    bg: /projectsbg/mycuisinebg
+  tags: Web Development, Node.js, Express.js, MongoDB, Bootstrap
+  data: node-express
+- image: Screenshot_2020-01-19 Heathy Lifestyle.png
+  name: Heathy Lifestyle
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Front-end Development, Angular, Typescript, Material Design, Firebase
+  data: angular
+- image: Screenshot_2020-01-22 The Bookstore.png
+  name: The Bookstore
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Web Development, React, Nodejs, Express, MongoDB, Bootstrap
+  data: react
+- image: Screenshot_2020-01-22 HealthyRecipes.png
+  name: HealthyRecipes
+  link: 
+    en: /projects/mycuisine
+    bg: /projectsbg/mycuisinebg
+  tags: Front-end Development, Angular, Bootstrap, Firebase
+  data: angular
 - image: Screenshot_2020-01-19 MyCuisine.jpg
   name: Gallery
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
-  info: 
-    en: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
-    bg: Проект с дълго дълго описание
   tags: Javascript Application, Javascript, jQuery, Bootstrap
   data: jsapp
+- image: Screenshot_2020-01-23 Home.png
+  name: Portfolio
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Front-end Development, Jekyll, HTML, CSS/SASS
+  data: jekyll
+- image: Screenshot_2020-01-23 Kinder Garten.jpg
+  name: Kinder Garten
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Front-end Development, Jekyll, HTML, Bootstrap
+  data: jekyll
+- image: Screenshot_2020-01-23 KidsCorner.jpg
+  name: KidsCorner
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Front-end Development, HTML, CSS, jQuery
+  data: html-css
+- image: Screenshot_2020-01-19 MyCuisine.jpg
+  name: Gallery
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  data: wordpress
+- image: Screenshot_2020-01-19 MyCuisine.jpg
+  name: Gallery
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  data: wordpress
+- image: Screenshot_2020-01-19 MyCuisine.jpg
+  name: Gallery
+  link: 
+    en: /projects/gallery
+    bg: /projectsbg/gallerybg
+  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  data: wordpress
