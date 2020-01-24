@@ -1090,6 +1090,8 @@ footer p {
   margin-right: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  -webkit-box-shadow: 5px 15px 10px -15px #7a7a7a;
+  box-shadow: 5px 15px 10px -15px #7a7a7a;
   position: relative;
   overflow: hidden;
   -webkit-animation: fadein 2s;
@@ -1119,6 +1121,7 @@ footer p {
 .projects-page .projects ul li img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
   -webkit-transition: transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;

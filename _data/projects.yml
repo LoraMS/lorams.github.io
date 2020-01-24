@@ -12,7 +12,7 @@
     bg: /projectsbg/mycuisinebg
   tags: Web Development, Node.js, Express.js, MongoDB, Bootstrap
   data: node-express
-- image: Screenshot_2020-01-19 Heathy Lifestyle.png
+- image: Screenshot_2020-01-23 Heathy Lifestyle.png
   name: Heathy Lifestyle
   link: 
     en: /projects/gallery
@@ -61,24 +61,24 @@
     bg: /projectsbg/gallerybg
   tags: Front-end Development, HTML, CSS, jQuery
   data: html-css
-- image: Screenshot_2020-01-19 MyCuisine.jpg
-  name: Gallery
+- image: Screenshot_2020-01-23 Cake Blog Cakes and Happiness.png
+  name: Cakes and Happiness
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
-  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  tags: Front-end Development, Wordpress
   data: wordpress
-- image: Screenshot_2020-01-19 MyCuisine.jpg
-  name: Gallery
+- image: Screenshot_2020-01-23 SPA SALON RELAX AND REFRESH.jpg
+  name: SPA Salon – Relax and Refresh
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
-  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  tags: Front-end Development, Wordpress
   data: wordpress
-- image: Screenshot_2020-01-19 MyCuisine.jpg
-  name: Gallery
+- image: Screenshot_2020-01-23 E-Shop.png
+  name: E-Shop
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
-  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  tags: Front-end Development, Wordpress, WooCommerce
   data: wordpress
