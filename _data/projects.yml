@@ -1,81 +1,81 @@
-- image: Screenshot1_2020-01-19 MyCuisine.jpg
+- image: MyCuisine.jpg
   name: My Cuisine
   link: 
     en: /projects/mycuisine
     bg: /projectsbg/mycuisinebg
   tags: Front-end Development, Javascript, jQuery, Bootstrap
   data: frontend
-- image: Screenshot_2020-01-22 Summer Photos1.png
+- image: Summer Photos.png
   name: Summer Photos
   link: 
     en: /projects/mycuisine
     bg: /projectsbg/mycuisinebg
   tags: Web Development, Node.js, Express.js, MongoDB, Bootstrap
   data: node-express
-- image: Screenshot_2020-01-23 Heathy Lifestyle.png
+- image: Heathy Lifestyle.png
   name: Heathy Lifestyle
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Angular, Typescript, Material Design, Firebase
   data: angular
-- image: Screenshot_2020-01-22 The Bookstore.png
+- image: The Bookstore.png
   name: The Bookstore
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Web Development, React, Nodejs, Express, MongoDB, Bootstrap
   data: react
-- image: Screenshot_2020-01-22 HealthyRecipes.png
+- image: HealthyRecipes.png
   name: HealthyRecipes
   link: 
     en: /projects/mycuisine
     bg: /projectsbg/mycuisinebg
   tags: Front-end Development, Angular, Bootstrap, Firebase
   data: angular
-- image: Screenshot_2020-01-19 MyCuisine.jpg
+- image: MyCuisine1.jpg
   name: Gallery
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Javascript Application, Javascript, jQuery, Bootstrap
   data: jsapp
-- image: Screenshot_2020-01-23 Home.png
+- image: Home.png
   name: Portfolio
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Jekyll, HTML, CSS/SASS
   data: jekyll
-- image: Screenshot_2020-01-23 Kinder Garten.jpg
+- image: Kinder Garten.jpg
   name: Kinder Garten
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Jekyll, HTML, Bootstrap
   data: jekyll
-- image: Screenshot_2020-01-23 KidsCorner.jpg
+- image: KidsCorner.jpg
   name: KidsCorner
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, HTML, CSS, jQuery
   data: html-css
-- image: Screenshot_2020-01-23 Cake Blog Cakes and Happiness.png
+- image: Cake Blog Cakes and Happiness.png
   name: Cakes and Happiness
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Wordpress
   data: wordpress
-- image: Screenshot_2020-01-23 SPA SALON RELAX AND REFRESH.jpg
+- image: SPA SALON RELAX AND REFRESH.jpg
   name: SPA Salon – Relax and Refresh
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Wordpress
   data: wordpress
-- image: Screenshot_2020-01-23 E-Shop.png
+- image: E-Shop.png
   name: E-Shop
   link: 
     en: /projects/gallery

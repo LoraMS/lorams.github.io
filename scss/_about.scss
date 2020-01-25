@@ -1,39 +1,38 @@
 .about-page {
-    // background-color: #fff;
-    // display: flex;
-    // flex-wrap: wrap;
-
     .about {
         flex: 1;
         padding: 3rem 5rem 0;
         color: $color-header;
 
-        .description{
-            padding-bottom: 2rem;
+        .description {
+            padding-bottom: 1rem;
+
             h1 {
                 @include page-heading;
             }
-    
-            h2{
+
+            h2 {
                 margin-bottom: 0;
                 font-family: 'Roboto', sans-serif;
             }
-    
-            h5{
+
+            h5 {
                 margin-top: 0;
                 font-family: 'Roboto', sans-serif;
             }
 
-            p{
+            p {
                 margin: 2.5rem 0;
             }
         }
-        .button{
-            a{
+
+        .button {
+            a {
                 margin-right: 2rem;
             }
+
             @include button($color-info-bg);
         }
-        
+
     }
 }
