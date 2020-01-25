@@ -9,33 +9,43 @@
     {{ content }}
 
     <aside class="group-by-category">
+        <hr>
         <div class="sub-nav">
             {% if page.lang == 'en' %}
-            <h3>Related projects</h3>
-            <h3><a href="./../projects.html">Back to all projects</a></h3>
+            <h6>Related Projects from Category</h6>
             {% elsif page.lang == 'bg' %}
-            <h3>Podobni proekti</h3>
-            <h3><a href="./../projects_bg.html">Kym Proekti</a></h3>
+            <h6>Подобни Проекти от Категорията </h6>
             {% endif %}
-        </div>
+        
         {% assign posts=site.posts | group_by: 'group' %}
         {% for group in posts %}
-        {% if group.size > 1 and group.name ==page.group %}
-        <h5>{{ group.name | upcase }}</h5>
+        {% if group.size > 1 and group.name == page.group %}
+        <span>{{ group.name | upcase }}</span>
         <ul>
             {% for item in group.items %}
             {% if page.lang == item.lang %}
             <li>
-                <a href="{{ item.url }}">{{ item.title }}</a>
+                <a href="{{ item.url }}">{{ item.title | upcase}}</a>
             </li>
             {% endif %}
             {% endfor %}
         </ul>
         {% endif %}
         {% endfor %}
+
+
+        {% if page.lang == 'en' %}
+        <a href="./../projects.html">Back to Projects</a>
+        {% elsif page.lang == 'bg' %}
+        <a href="./../projects_bg.html">Към Проекти</a>
+        {% endif %}
+    </div>
+
     </aside>
 
     {% include footer.html  %}
+
+    {% include scripts.html %}
 </body>
 
 </html>

@@ -382,7 +382,7 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -404,7 +404,7 @@ ul {
 }
 
 header .navigation {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,7 +472,7 @@ footer p {
 }
 
 .info {
-  width: 25%;
+  width: 30%;
   background-color: #88bbd6;
 }
 
@@ -652,7 +652,7 @@ footer p {
 }
 
 .about-page .about .description {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .about-page .about .description h1 {
@@ -737,7 +737,6 @@ footer p {
 
 .skills-page .skills-description .services ul li {
   text-align: center;
-  padding: 0 1.5rem;
 }
 
 .skills-page .skills-description .services ul li h6 {
@@ -763,7 +762,7 @@ footer p {
 
 .skills-page .skills-description .skills-bar ul li.skills-bar-item {
   position: relative;
-  margin: 0.625rem 1.25rem;
+  margin: 1rem 1rem 1rem 0;
   height: 2rem;
   background-color: rgba(136, 187, 214, 0.5);
 }
@@ -1021,7 +1020,7 @@ footer p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3rem 5rem 0;
+  padding: 3rem 4rem 0;
   height: 79vh;
   overflow-y: scroll;
   scrollbar-width: thin;
@@ -1086,7 +1085,7 @@ footer p {
 }
 
 .projects-page .projects ul li {
-  width: 46%;
+  width: 45%;
   margin-right: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -1183,16 +1182,172 @@ footer p {
   color: #88bbd6;
 }
 
-.sub-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.project-info {
+  background-color: #fff;
+  color: #62289b;
+  padding: 2rem 5rem 0.2rem;
+  position: relative;
+  /* Fading animation */
+}
+
+.project-info h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.project-info h3 {
+  margin-bottom: 1rem;
+  line-height: 0.9;
+}
+
+.project-info hr {
+  width: 30%;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+.project-info a {
+  padding: 0.625rem;
+  border: 2px solid #bbb;
+  color: #bbb;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.project-info a i {
+  padding-right: 0.625rem;
+}
+
+.project-info a:hover {
+  color: #fff;
+  background-color: #bbb;
+}
+
+.project-info ul li {
+  list-style-type: circle;
+}
+
+.project-info .slider-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.project-info .slider-container .slides {
+  display: none;
+}
+
+.project-info .slider-container .slides img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.project-info .slider-arrows .prev,
+.project-info .slider-arrows .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: 7%;
+  color: #717171;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.project-info .slider-arrows .next {
+  right: 0;
+  left: 92%;
+}
+
+.project-info .slider-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.project-info .slider-dots .dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.project-info .slider-dots .active,
+.project-info .slider-dots .dots:hover {
+  background-color: #717171;
+}
+
+.project-info .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+aside.group-by-category {
+  background-color: #fff;
+  color: #62289b;
+  padding: 0.2rem 5rem 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+aside.group-by-category hr {
+  color: #bbb;
+  margin: 1rem 0;
+}
+
+aside.group-by-category h6 {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+aside.group-by-category span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+aside.group-by-category ul li {
+  list-style-type: circle;
+}
+
+aside.group-by-category .sub-nav > a {
+  padding: 0.625rem;
+  margin: 2rem 0 4rem;
+  border: 2px solid #bbb;
+  color: #bbb;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+}
+
+aside.group-by-category .sub-nav > a:hover {
+  color: #fff;
+  background-color: #bbb;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .contacts-page .contacts {
@@ -1209,7 +1364,7 @@ footer p {
 }
 
 .contacts-page .contacts form {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding: 2rem;
 }

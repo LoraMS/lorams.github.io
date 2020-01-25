@@ -1,26 +1,43 @@
 ---
 layout: post
-title:  mycuisine
-date:   2020-01-15 20:54:51 +0200
+title: mycuisine
+date: 2020-01-15 20:54:51 +0200
 categories: projects
 permalink: /:categories/:title
 lang: en
 ref: mycuisine
-group: front-end
+group: front-end 
 ---
 
-<h1>Some Title</h1>
-<!-- carousel -->
-<img src="./../assets/images/star.png" alt="project-image">
-<h3>About this project</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis deleniti ut molestias libero dolores, blanditiis esse consectetur debitis eveniet facilis aut facere velit dolorum delectus veniam distinctio? Tempora, quasi!</p>
-<h3>Technical Sheet</h3>
-<ul>
-    <li>Something</li>
-    <li>Another</li>
-    <li>More</li>
-    <li>Some</li>
-</ul>
-<h3>Resources</h3>
-<p>Visit the project at <a href="#">Some link</a></p>
-<p>View the source at <a href="#">Githib</a></p>
+<main>
+    <div class="project-info">
+        <h2>My Cuisine</h2>
+        <p>Single-page application design and implement from the given design in PSD</p>
+        <a href="https://cuisine-5d637.firebaseapp.com/#/home"><i class="fas fa-external-link-alt"></i>Visit the Website</a>
+        {% assign image1="MyCuisine.jpg" %}
+        {% assign image2="MyCuisine-menu.png" %}
+        {% assign image3="MyCuisine-blog.jpg" %}
+        {% include slider.html %}
+        <h3>About this project</h3>
+        <hr>
+        <p>Single-page application sliced from the given design (PSD Design folder), without using any full-featured js framework/library. Implemented responsive design look good on most used resolutions. Visitors easy can learn restaurant's address and contact info from location page. The menu page give information about the list of products separated by categories. Blog and gallery pages can help them to choose what to order.</p>
+        <h3>Technical Sheet</h3>
+        <hr>
+        <ul>
+            <li>jQuery</li>
+            <li>Handlebars</li>
+            <li>Less</li>
+            <li>Bootstrap</li>
+            <li>SystemJS</li>
+            <li>SammyJS</li>
+            <li>Moment</li>
+            <li>Gulp</li>
+            <li>Kinvey API, Database</li>
+            <li>Firebase API, Host</li>
+        </ul>
+        <h3>Resources</h3>
+        <hr>
+        <a href="https://cuisine-5d637.firebaseapp.com/#/home"><i class="fas fa-external-link-alt"></i>Visit the Website</a>
+        <a href="https://github.com/lorashopova/MyCuisine"><i class="fab fa-github"></i>View the source</a>
+    </div>
+</main>
