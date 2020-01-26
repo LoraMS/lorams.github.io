@@ -8,21 +8,21 @@
 - image: Summer Photos.png
   name: Summer Photos
   link: 
-    en: /projects/mycuisine
+    en: /projects/summerphotos
     bg: /projectsbg/mycuisinebg
   tags: Web Development, Node.js, Express.js, MongoDB, Bootstrap
   data: node-express
-- image: Heathy Lifestyle.png
-  name: Heathy Lifestyle
+- image: Healthy Lifestyle.png
+  name: Healthy Lifestyle
   link: 
-    en: /projects/gallery
+    en: /projects/healthylifestyle
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Angular, Typescript, Material Design, Firebase
   data: angular
 - image: The Bookstore.png
   name: The Bookstore
   link: 
-    en: /projects/gallery
+    en: /projects/thebookstore
     bg: /projectsbg/gallerybg
   tags: Web Development, React, Nodejs, Express, MongoDB, Bootstrap
   data: react
