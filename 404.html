@@ -1,24 +1,49 @@
 ---
-layout: default
+layout: site
+title: 404
+lang: en
+ref: 404
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
+<style>
+  .error-page {
     text-align: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+
+  .error-page h2 {
+    font-size: 15rem;
+    color: #88bbd6;
+    font-family: 'Coming Soon', cursive;
+    margin-bottom: 1.2rem;
+  }
+
+  .error-page p {
+    font-size: 5rem;
+    color: #88bbd6;
+    font-family: 'Coming Soon', cursive;
+    margin-bottom: 1.2rem;
+  }
+
+  .error-page button {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.625rem 1.25rem;
+    border: 2px solid #88bbd6;
+    color: #88bbd6;
+    background-color: transparent;
+    border-radius: 0.3rem;
+  }
+
+  .error-page button:hover {
+    color: #88bbd6;
+    background-color: #fff;
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<main>
+  <div class="error-page">
+    <h2>Error 404</h2>
+    <p>Page not found</p>
+    <button onclick="goBack()">Go Back</button>
+  </div>
+</main>
