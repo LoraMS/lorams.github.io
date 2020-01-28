@@ -27,58 +27,58 @@
   tags: Web Development, React, Nodejs, Express, MongoDB, Bootstrap
   data: react
 - image: HealthyRecipes.png
-  name: HealthyRecipes
+  name: Healthy Recipes
   link: 
-    en: /projects/mycuisine
+    en: /projects/healthyrecipes
     bg: /projectsbg/mycuisinebg
   tags: Front-end Development, Angular, Bootstrap, Firebase
   data: angular
 - image: MyCuisine1.jpg
-  name: Gallery
+  name: E-Gallery
   link: 
     en: /projects/gallery
     bg: /projectsbg/gallerybg
-  tags: Javascript Application, Javascript, jQuery, Bootstrap
+  tags: Front-end Development, Javascript, jQuery, Bootstrap
   data: jsapp
 - image: Home.png
   name: Portfolio
   link: 
-    en: /projects/gallery
+    en: /projects/portfolio
     bg: /projectsbg/gallerybg
-  tags: Front-end Development, Jekyll, HTML, CSS/SASS
+  tags: Front-end Development, Jekyll, CSS/SASS
   data: jekyll
 - image: Kinder Garten.jpg
-  name: Kinder Garten
+  name: Kindergarten
   link: 
-    en: /projects/gallery
+    en: /projects/kindergarten
     bg: /projectsbg/gallerybg
-  tags: Front-end Development, Jekyll, HTML, Bootstrap
+  tags: Front-end Development, Jekyll, Bootstrap
   data: jekyll
 - image: KidsCorner.jpg
   name: KidsCorner
   link: 
-    en: /projects/gallery
+    en: /projects/kidscorner
     bg: /projectsbg/gallerybg
   tags: Front-end Development, HTML, CSS, jQuery
   data: html-css
 - image: Cake Blog Cakes and Happiness.png
-  name: Cakes and Happiness
+  name: Cake Blog
   link: 
-    en: /projects/gallery
+    en: /projects/cakeblog
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Wordpress
   data: wordpress
 - image: SPA SALON RELAX AND REFRESH.jpg
   name: SPA Salon – Relax and Refresh
   link: 
-    en: /projects/gallery
+    en: /projects/spasalon
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Wordpress
   data: wordpress
 - image: E-Shop.png
   name: E-Shop
   link: 
-    en: /projects/gallery
+    en: /projects/eshop
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Wordpress, WooCommerce
   data: wordpress
