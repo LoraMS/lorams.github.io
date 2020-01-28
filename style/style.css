@@ -1230,6 +1230,11 @@ footer p {
   list-style-type: circle;
 }
 
+.project-info ul li ul li {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
 .project-info .slider-container {
   margin: 0 auto;
   width: 80%;
