@@ -9,28 +9,28 @@
   name: Summer Photos
   link: 
     en: /projects/summerphotos
-    bg: /projectsbg/mycuisinebg
+    bg: /projectsbg/summerphotosbg
   tags: Web Development, Node.js, Express.js, MongoDB, Bootstrap
   data: node-express
 - image: Healthy Lifestyle.png
   name: Healthy Lifestyle
   link: 
     en: /projects/healthylifestyle
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/healthylifestylebg
   tags: Front-end Development, Angular, Typescript, Material Design, Firebase
   data: angular
 - image: The Bookstore.png
   name: The Bookstore
   link: 
     en: /projects/thebookstore
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/thebookstorebg
   tags: Web Development, React, Nodejs, Express, MongoDB, Bootstrap
   data: react
 - image: HealthyRecipes.png
   name: Healthy Recipes
   link: 
     en: /projects/healthyrecipes
-    bg: /projectsbg/mycuisinebg
+    bg: /projectsbg/healthyrecipesbg
   tags: Front-end Development, Angular, Bootstrap, Firebase
   data: angular
 - image: MyCuisine1.jpg
@@ -44,41 +44,41 @@
   name: Portfolio
   link: 
     en: /projects/portfolio
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/portfoliobg
   tags: Front-end Development, Jekyll, CSS/SASS
   data: jekyll
 - image: Kinder Garten.jpg
   name: Kindergarten
   link: 
     en: /projects/kindergarten
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/kindergartenbg
   tags: Front-end Development, Jekyll, Bootstrap
   data: jekyll
 - image: KidsCorner.jpg
   name: KidsCorner
   link: 
     en: /projects/kidscorner
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/kidscornerbg
   tags: Front-end Development, HTML, CSS, jQuery
   data: html-css
 - image: Cake Blog Cakes and Happiness.png
   name: Cake Blog
   link: 
     en: /projects/cakeblog
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/cakeblogbg
   tags: Front-end Development, Wordpress
   data: wordpress
 - image: SPA SALON RELAX AND REFRESH.jpg
   name: SPA Salon – Relax and Refresh
   link: 
     en: /projects/spasalon
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/spasalonbg
   tags: Front-end Development, Wordpress
   data: wordpress
 - image: E-Shop.png
   name: E-Shop
   link: 
     en: /projects/eshop
-    bg: /projectsbg/gallerybg
+    bg: /projectsbg/eshopbg
   tags: Front-end Development, Wordpress, WooCommerce
   data: wordpress
