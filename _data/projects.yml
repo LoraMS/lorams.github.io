@@ -40,7 +40,7 @@
     bg: /projectsbg/gallerybg
   tags: Front-end Development, Javascript, jQuery, Bootstrap
   data: jsapp
-- image: Home.png
+- image: Portfolio-Home.png
   name: Portfolio
   link: 
     en: /projects/portfolio
