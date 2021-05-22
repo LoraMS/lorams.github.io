@@ -1,111 +1,98 @@
 .home-page {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-image: url("./../assets/images/main-bg3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
     background-position: center;
 
     .profile-image-holder {
-        flex: 1;
+       
+        position: relative;
 
         .profile-image {
-            position: relative;
-            float: left;
-            top: 25%;
-            left: 45%;
-            transform: translate(-25%, -45%);
-            margin: 10rem auto;
+            margin: 9rem auto;
+            padding-right: 8rem;
+            text-align: center;
 
             &:before {
                 display: block;
                 content: "";
-                width: 15rem;
+                width: 14rem;
                 height: 4rem;
                 position: absolute;
-                top: -0.9rem;
-                right: -0.5rem;
+                top: 8rem;
+                right: 7rem;
                 border-top: 1rem solid $color-home;
                 border-right: 1rem solid $color-home;
-
-                // @include profile-image-border;
             }
 
             img {
-                max-width: 100%;
+                width: 100%;
+                max-width: 400px;
                 height: auto;
+                // position: relative;
+                // top: 50%;
+                // transform: translateY(-50%);
             }
         }
     }
-}
 
-.heading {
-    flex: 1;
-    // position: relative;
-    // top: 30%;
-    // -ms-transform: translateY(30%);
-    // -webkit-transform: translateY(30%);
-    // transform: translateY(30%);
+    .heading {
 
-    div.animated-heading {
-        position: relative;
-        float: left;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        div.heading-home {
 
-        h2 {
-            // TO DO
-            font-weight: bold;
-            vertical-align: middle;
-            font-size: 2rem;
-            font-family: 'Coming Soon', cursive;
-            color: $color-home;
+            h2 {
+                font-weight: bold;
+                vertical-align: middle;
+                font-size: 2rem;
+                font-family: 'Coming Soon', cursive;
+                color: $color-home;
 
-            &:nth-child(1) {
-                // width: 1.5em;
-                // -webkit-animation: type 2s steps(3, end);
-                // animation: type 2s steps(3, end);
-                // -webkit-animation-fill-mode: forwards;
-                // animation-fill-mode: forwards;
+                &:nth-child(1) {
+                    // width: 1.5em;
+                    // -webkit-animation: type 2s steps(3, end);
+                    // animation: type 2s steps(3, end);
+                    // -webkit-animation-fill-mode: forwards;
+                    // animation-fill-mode: forwards;
+                }
+
+                &:nth-child(2) {
+                    // width: 7.5em;
+                    // opacity: 0;
+                    // -webkit-animation: type2 2s steps(15, end);
+                    // animation: type2 2s steps(15, end);
+                    // -webkit-animation-delay: 2s;
+                    // animation-delay: 2s;
+                    // -webkit-animation-fill-mode: forwards;
+                    // animation-fill-mode: forwards;
+                }
+
+                &:nth-child(3) {
+                    // width: 11em;
+                    // opacity: 0;
+                    // -webkit-animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
+                    // animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
+                    // -webkit-animation-delay: 4s;
+                    // animation-delay: 4s;
+                    // -webkit-animation-fill-mode: forwards;
+                    // animation-fill-mode: forwards;
+
+                    margin-bottom: 3.75rem;
+                }
+
             }
 
-            &:nth-child(2) {
-                // width: 7.5em;
-                // opacity: 0;
-                // -webkit-animation: type2 2s steps(15, end);
-                // animation: type2 2s steps(15, end);
-                // -webkit-animation-delay: 2s;
-                // animation-delay: 2s;
-                // -webkit-animation-fill-mode: forwards;
-                // animation-fill-mode: forwards;
+            &.bg-heading h2 {
+                font-family: 'Dacha', sans-serif;
             }
 
-            &:nth-child(3) {
-                // width: 11em;
-                // opacity: 0;
-                // -webkit-animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
-                // animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
-                // -webkit-animation-delay: 4s;
-                // animation-delay: 4s;
-                // -webkit-animation-fill-mode: forwards;
-                // animation-fill-mode: forwards;
-
-                margin-bottom: 3.75rem;
+            .button {
+                @include button($color-home);
             }
 
         }
-
-        &.bg-heading h2{
-            font-family: 'Dacha', sans-serif;
-        }
-
-        .button {
-            @include button($color-home);
-        }
-
     }
 }
