@@ -33,9 +33,6 @@
                 width: 100%;
                 max-width: 400px;
                 height: auto;
-                // position: relative;
-                // top: 50%;
-                // transform: translateY(-50%);
             }
         }
     }
@@ -51,35 +48,7 @@
                 font-family: 'Coming Soon', cursive;
                 color: $color-home;
 
-                &:nth-child(1) {
-                    // width: 1.5em;
-                    // -webkit-animation: type 2s steps(3, end);
-                    // animation: type 2s steps(3, end);
-                    // -webkit-animation-fill-mode: forwards;
-                    // animation-fill-mode: forwards;
-                }
-
-                &:nth-child(2) {
-                    // width: 7.5em;
-                    // opacity: 0;
-                    // -webkit-animation: type2 2s steps(15, end);
-                    // animation: type2 2s steps(15, end);
-                    // -webkit-animation-delay: 2s;
-                    // animation-delay: 2s;
-                    // -webkit-animation-fill-mode: forwards;
-                    // animation-fill-mode: forwards;
-                }
-
                 &:nth-child(3) {
-                    // width: 11em;
-                    // opacity: 0;
-                    // -webkit-animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
-                    // animation: type3 2s steps(22, end), blink .5s step-end infinite alternate;
-                    // -webkit-animation-delay: 4s;
-                    // animation-delay: 4s;
-                    // -webkit-animation-fill-mode: forwards;
-                    // animation-fill-mode: forwards;
-
                     margin-bottom: 3.75rem;
                 }
 

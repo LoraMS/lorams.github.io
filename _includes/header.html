@@ -24,6 +24,8 @@
                 </a>
                 {% endfor %}
             </div>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
             <ul>
                 {% assign url = page.url|remove:'.html' %}
                 {% for menu in site.t[page.lang] offset:1 %}

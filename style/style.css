@@ -468,6 +468,10 @@ header .navigation nav ul li.nav-item.active::after {
   visibility: visible;
 }
 
+header .navigation label, header .navigation #hamburger {
+  display: none;
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -1419,6 +1423,17 @@ aside.group-by-category .sub-nav > a:hover {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .home-page .profile-image-holder .profile-image {
+    margin: 6rem auto;
+    padding-right: 6rem;
+  }
+  .home-page .profile-image-holder .profile-image:before {
+    top: 5rem;
+    right: 5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .home-page .profile-image-holder .profile-image {
     margin: 5rem auto;
@@ -1435,6 +1450,15 @@ aside.group-by-category .sub-nav > a:hover {
   }
 }
 
+@media screen and (max-width: 900px) {
+  header .navigation {
+    width: 80%;
+  }
+  main {
+    width: 78%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header .navigation nav ul li.nav-item a {
     font-size: 0.8rem;
@@ -1448,7 +1472,7 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .home-page .profile-image-holder .profile-image:before {
     width: 4rem;
-    top: 8.3rem;
+    top: 4.3rem;
     right: 3.3rem;
     border-top: 0.7rem solid #c9c6be;
     border-right: 0.7rem solid #c9c6be;
@@ -1464,6 +1488,15 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .home-page .heading .heading-home .button a {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .navigation {
+    width: 90%;
+  }
+  main {
+    width: 90%;
   }
 }
 
@@ -1492,6 +1525,84 @@ aside.group-by-category .sub-nav > a:hover {
   }
   footer p {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header section .logo {
+    font-size: 14px;
+  }
+  header .navigation nav ul li.nav-item a {
+    font-size: 0.6rem;
+  }
+  .home-page .profile-image-holder .profile-image {
+    padding-right: 2rem;
+  }
+  .home-page .profile-image-holder .profile-image:before {
+    right: 1.3rem;
+  }
+  .home-page .profile-image-holder .profile-image img {
+    max-width: 120px;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .navigation {
+    width: 100%;
+    padding-left: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .navigation nav .lang a {
+    margin-right: 2rem;
+  }
+  header .navigation nav ul li.nav-item {
+    display: block;
+  }
+  header .navigation label {
+    display: inline-block;
+    color: white;
+    background: #88bbd6;
+    font-style: normal;
+    font-size: 0.8em;
+    padding: 3px 10px;
+    position: fixed;
+    right: 0;
+    top: -0.1rem;
+  }
+  header .navigation ul {
+    display: none;
+  }
+  header .navigation input:checked ~ ul {
+    display: block;
+  }
+  header .navigation input:checked ~ .logo {
+    margin-top: -8rem;
+  }
+  .home-page {
+    background-size: 100% 100%;
+  }
+  .home-page .profile-image-holder .profile-image:before {
+    display: none;
+  }
+  .home-page .heading .heading-home {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-page .profile-image-holder {
+    display: none;
+  }
+  .home-page .heading .heading-home {
+    padding: 2rem;
+  }
+  .home-page .heading div.heading-home h2:nth-child(3) {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
