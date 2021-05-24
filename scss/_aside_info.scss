@@ -38,12 +38,12 @@
             div {
                 display: inline-block;
 
-                span {
+                span.label{
                     color: $color-info;
                 }
 
                 a {
-                    color: #fff;
+                    color: #ececec;
 
                     &:hover {
                         color: $color-info;

@@ -527,12 +527,12 @@ footer p {
   display: inline-block;
 }
 
-.info .general-info ul li div span {
+.info .general-info ul li div span.label {
   color: #dedde6;
 }
 
 .info .general-info ul li div a {
-  color: #fff;
+  color: #ececec;
 }
 
 .info .general-info ul li div a:hover {
@@ -1421,6 +1421,15 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading div.heading-home h2 {
     font-size: 1.5rem;
   }
+  .info {
+    width: 32%;
+  }
+  .info .general-info {
+    padding: 1.5rem;
+  }
+  .about-page .about {
+    padding: 3rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1431,6 +1440,24 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .profile-image-holder .profile-image:before {
     top: 5rem;
     right: 5rem;
+  }
+  .info {
+    width: 33%;
+  }
+  .info .general-info {
+    padding: 3rem 0.5rem 0;
+  }
+  .info .general-info h2 {
+    margin-bottom: 3rem;
+  }
+  .info .general-info ul li {
+    padding: 0.625rem 0.625rem 1.5rem;
+  }
+  .info .general-info ul li .fa, .info .general-info ul li .far, .info .general-info ul li .fas {
+    margin-right: 0.1rem;
+  }
+  .about-page .about {
+    padding: 3rem;
   }
 }
 
@@ -1448,6 +1475,16 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading div.heading-home h2 {
     font-size: 1.2rem;
   }
+  .info {
+    width: 35%;
+  }
+  .info .general-info ul li {
+    padding: 0.625rem 0.25rem 1.5rem;
+    font-size: 15px;
+  }
+  .about-page .about {
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1455,7 +1492,7 @@ aside.group-by-category .sub-nav > a:hover {
     width: 80%;
   }
   main {
-    width: 78%;
+    width: 80%;
   }
 }
 
@@ -1463,9 +1500,6 @@ aside.group-by-category .sub-nav > a:hover {
   header .navigation nav ul li.nav-item a {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  main {
-    width: 80%;
   }
   .home-page .profile-image-holder .profile-image {
     padding-right: 4rem;
@@ -1489,6 +1523,27 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading .heading-home .button a {
     font-size: 0.8rem;
   }
+  .info .general-info ul li i {
+    position: relative;
+    top: -1.3rem;
+    right: -1.2rem;
+  }
+  .info .general-info ul li div .data {
+    display: block;
+  }
+  .info .general-info ul li div .label {
+    padding-left: 1.2rem;
+  }
+  .about-page .about .button a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-page .about .button a {
+    font-size: 12px;
+    padding: 0.625rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1498,15 +1553,59 @@ aside.group-by-category .sub-nav > a:hover {
   main {
     width: 90%;
   }
+  .info .general-info ul li i.fa-envelope {
+    top: 1.3rem;
+  }
+  .info .general-info ul li i.fa-envelope + div {
+    margin-left: 1.4rem;
+  }
+  .info .general-info ul li i.fa-envelope + div .data {
+    margin-left: -0.6rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   header .navigation {
-    width: 90%;
+    width: 100%;
+    padding-left: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .navigation nav .lang a {
+    margin-right: 2rem;
   }
   header .navigation nav ul li.nav-item a {
     font-size: 0.7rem;
     padding: 0.2rem;
+  }
+  header .navigation nav ul li.nav-item {
+    display: block;
+  }
+  header .navigation label {
+    display: inline-block;
+    color: white;
+    background: #88bbd6;
+    font-style: normal;
+    font-size: 0.8em;
+    padding: 3px 10px;
+    position: relative;
+    right: -11.6rem;
+    top: -1.5rem;
+  }
+  header .navigation nav ul {
+    display: none;
+  }
+  header .navigation nav ul li.nav-item::after {
+    width: 25%;
+    left: 0;
+    top: 80%;
+  }
+  header .navigation input:checked ~ ul {
+    display: block;
+  }
+  header .navigation input:checked ~ .logo {
+    margin-top: -8rem;
   }
   main {
     width: 100%;
@@ -1522,6 +1621,13 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .home-page .heading div.heading-home .button a {
     padding: 0.2rem 1rem;
+  }
+  .info {
+    width: 37%;
+  }
+  .about-page .about .button a {
+    display: table;
+    margin-bottom: 1rem;
   }
   footer p {
     font-size: 0.8rem;
@@ -1543,6 +1649,34 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .home-page .profile-image-holder .profile-image img {
     max-width: 120px;
+  }
+  .about-page .info {
+    width: 100%;
+  }
+  .about-page .info img {
+    display: none;
+  }
+  .about-page .info .general-info {
+    padding: 3rem;
+  }
+  .about-page .info .general-info ul li i {
+    position: inherit;
+  }
+  .about-page .info .general-info ul li div .data {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .about-page .info .general-info ul li i.fa-envelope + div {
+    margin-left: 0rem;
+  }
+  .about-page .info .general-info ul li i.fa-envelope + div .data {
+    margin-left: 0rem;
+  }
+  .about-page .info .general-info ul li i.fa-envelope + div .label {
+    padding-left: 1rem;
+  }
+  .about-page .about .button a {
+    display: inline-block;
   }
   footer p {
     font-size: 0.7rem;
@@ -1603,6 +1737,9 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .home-page .heading div.heading-home h2:nth-child(3) {
     margin-bottom: 2rem;
+  }
+  .about-page .info .general-info {
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
