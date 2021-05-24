@@ -901,7 +901,7 @@ footer p {
 }
 
 .skills-page .skills-description .skills-bar ul li.skills-bar-item .php {
-  width: 50%;
+  width: 70%;
   animation: php 2s;
   -webkit-animation: php 2s;
   -moz-animation: php 2s;
@@ -913,7 +913,7 @@ footer p {
 }
 
 .skills-page .skills-description .skills-bar ul li.skills-bar-item .symfony {
-  width: 50%;
+  width: 70%;
   animation: symfony 2s;
   -webkit-animation: symfony 2s;
   -moz-animation: symfony 2s;
@@ -1430,6 +1430,9 @@ aside.group-by-category .sub-nav > a:hover {
   .about-page .about {
     padding: 3rem;
   }
+  .skills-page .skills-description .services ul li h6 {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1459,6 +1462,9 @@ aside.group-by-category .sub-nav > a:hover {
   .about-page .about {
     padding: 3rem;
   }
+  .skills-page .skills-description {
+    padding: 3rem 3rem 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1484,6 +1490,15 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .about-page .about {
     padding: 2rem;
+  }
+  .skills-page .skills-description {
+    padding: 3rem 0.8rem 0;
+  }
+  .skills-page .skills-description .services ul li p {
+    font-size: 0.8rem;
+  }
+  .contacts-page .contacts {
+    padding: 3rem 0rem 0;
   }
 }
 
@@ -1523,6 +1538,12 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading .heading-home .button a {
     font-size: 0.8rem;
   }
+  .info .general-info h2 {
+    margin-bottom: 1rem;
+  }
+  .info .general-info ul li {
+    padding: 0.625rem 0.25rem 0.5rem;
+  }
   .info .general-info ul li i {
     position: relative;
     top: -1.3rem;
@@ -1537,6 +1558,18 @@ aside.group-by-category .sub-nav > a:hover {
   .about-page .about .button a {
     font-size: 14px;
   }
+  .skills-page .skills-description {
+    padding: 3rem 0.5rem 0;
+  }
+  .skills-page .skills-description .services ul li:nth-child(2) {
+    margin-top: -1rem;
+  }
+  .certificates-page .certificates h1 {
+    font-size: 2rem;
+  }
+  .contacts-page .contacts form {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1544,14 +1577,8 @@ aside.group-by-category .sub-nav > a:hover {
     font-size: 12px;
     padding: 0.625rem;
   }
-}
-
-@media screen and (max-width: 576px) {
-  header .navigation {
-    width: 90%;
-  }
-  main {
-    width: 90%;
+  .skills-page .skills-description .services ul li:nth-child(2) {
+    margin-top: 0;
   }
   .info .general-info ul li i.fa-envelope {
     top: 1.3rem;
@@ -1561,6 +1588,25 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .info .general-info ul li i.fa-envelope + div .data {
     margin-left: -0.6rem;
+  }
+  .certificates-page .certificates h1 {
+    font-size: 1.4rem;
+  }
+  .certificates-page .certificates {
+    padding: 3rem 1.8rem 0;
+  }
+  .contacts-page .contacts form {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .navigation {
+    width: 90%;
+  }
+  main {
+    width: 90%;
   }
 }
 
@@ -1590,7 +1636,7 @@ aside.group-by-category .sub-nav > a:hover {
     font-size: 0.8em;
     padding: 3px 10px;
     position: relative;
-    right: -11.6rem;
+    right: -11rem;
     top: -1.5rem;
   }
   header .navigation nav ul {
@@ -1629,6 +1675,16 @@ aside.group-by-category .sub-nav > a:hover {
     display: table;
     margin-bottom: 1rem;
   }
+  .skills-page .skills-description .services ul {
+    display: block;
+  }
+  .skills-page .skills-description .skills-bar {
+    display: block;
+  }
+  .contacts-page {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   footer p {
     font-size: 0.8rem;
   }
@@ -1650,33 +1706,40 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .profile-image-holder .profile-image img {
     max-width: 120px;
   }
-  .about-page .info {
+  .contacts-page {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-page .info, .skills-page .info, .certificates-page .info, .contacts-page .info {
     width: 100%;
   }
-  .about-page .info img {
+  .about-page .info img, .skills-page .info img, .certificates-page .info img, .contacts-page .info img {
     display: none;
   }
-  .about-page .info .general-info {
+  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info {
     padding: 3rem;
   }
-  .about-page .info .general-info ul li i {
+  .about-page .info .general-info ul li i, .skills-page .info .general-info ul li i, .certificates-page .info .general-info ul li i, .contacts-page .info .general-info ul li i {
     position: inherit;
   }
-  .about-page .info .general-info ul li div .data {
+  .about-page .info .general-info ul li div .data, .skills-page .info .general-info ul li div .data, .certificates-page .info .general-info ul li div .data, .contacts-page .info .general-info ul li div .data {
     display: inline-block;
     margin-left: 0;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div {
+  .about-page .info .general-info ul li i.fa-envelope + div, .skills-page .info .general-info ul li i.fa-envelope + div, .certificates-page .info .general-info ul li i.fa-envelope + div, .contacts-page .info .general-info ul li i.fa-envelope + div {
     margin-left: 0rem;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div .data {
+  .about-page .info .general-info ul li i.fa-envelope + div .data, .skills-page .info .general-info ul li i.fa-envelope + div .data, .certificates-page .info .general-info ul li i.fa-envelope + div .data, .contacts-page .info .general-info ul li i.fa-envelope + div .data {
     margin-left: 0rem;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div .label {
+  .about-page .info .general-info ul li i.fa-envelope + div .label, .skills-page .info .general-info ul li i.fa-envelope + div .label, .certificates-page .info .general-info ul li i.fa-envelope + div .label, .contacts-page .info .general-info ul li i.fa-envelope + div .label {
     padding-left: 1rem;
   }
-  .about-page .about .button a {
+  .about-page .about .button a, .skills-page .about .button a, .certificates-page .about .button a, .contacts-page .about .button a {
     display: inline-block;
+  }
+  .contacts-page .contacts {
+    padding: 3rem 0;
   }
   footer p {
     font-size: 0.7rem;
@@ -1738,7 +1801,7 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading div.heading-home h2:nth-child(3) {
     margin-bottom: 2rem;
   }
-  .about-page .info .general-info {
+  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info {
     padding: 2rem;
   }
 }
