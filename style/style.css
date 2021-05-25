@@ -1433,6 +1433,12 @@ aside.group-by-category .sub-nav > a:hover {
   .skills-page .skills-description .services ul li h6 {
     font-size: 0.8rem;
   }
+  .projects-page .projects ul {
+    display: block;
+  }
+  .projects-page .projects ul li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1464,6 +1470,9 @@ aside.group-by-category .sub-nav > a:hover {
   }
   .skills-page .skills-description {
     padding: 3rem 3rem 0;
+  }
+  .projects-page .projects .projects-filter {
+    padding: 0 2rem 2rem;
   }
 }
 
@@ -1500,6 +1509,9 @@ aside.group-by-category .sub-nav > a:hover {
   .contacts-page .contacts {
     padding: 3rem 0rem 0;
   }
+  .projects-page .projects .projects-filter {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1507,6 +1519,9 @@ aside.group-by-category .sub-nav > a:hover {
     width: 80%;
   }
   main {
+    width: 80%;
+  }
+  aside.group-by-category {
     width: 80%;
   }
 }
@@ -1570,6 +1585,18 @@ aside.group-by-category .sub-nav > a:hover {
   .contacts-page .contacts form {
     width: 80%;
   }
+  .projects-page .projects {
+    padding: 3rem 2rem 0;
+  }
+  .projects-page .projects ul li .card p {
+    font-size: 0.9rem;
+  }
+  .projects-page .projects ul li .card-button a {
+    font-size: 0.7rem;
+  }
+  .project-info .slider-arrows .prev, .project-info .slider-arrows .next {
+    top: 30%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1599,6 +1626,13 @@ aside.group-by-category .sub-nav > a:hover {
     width: 70%;
     padding: 0;
   }
+  .projects-page .projects ul li .card h6 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .project-info .slider-arrows .prev, .project-info .slider-arrows .next {
+    top: 25%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1606,6 +1640,9 @@ aside.group-by-category .sub-nav > a:hover {
     width: 90%;
   }
   main {
+    width: 90%;
+  }
+  aside.group-by-category {
     width: 90%;
   }
 }
@@ -1685,6 +1722,12 @@ aside.group-by-category .sub-nav > a:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .projects-page .projects {
+    padding: 3rem 0.5rem 0;
+  }
+  aside.group-by-category {
+    width: 100%;
+  }
   footer p {
     font-size: 0.8rem;
   }
@@ -1710,36 +1753,42 @@ aside.group-by-category .sub-nav > a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .about-page .info, .skills-page .info, .certificates-page .info, .contacts-page .info {
+  .about-page .info, .skills-page .info, .certificates-page .info, .contacts-page .info, .projects-page .info {
     width: 100%;
   }
-  .about-page .info img, .skills-page .info img, .certificates-page .info img, .contacts-page .info img {
+  .about-page .info img, .skills-page .info img, .certificates-page .info img, .contacts-page .info img, .projects-page .info img {
     display: none;
   }
-  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info {
+  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info, .projects-page .info .general-info {
     padding: 3rem;
   }
-  .about-page .info .general-info ul li i, .skills-page .info .general-info ul li i, .certificates-page .info .general-info ul li i, .contacts-page .info .general-info ul li i {
+  .about-page .info .general-info ul li i, .skills-page .info .general-info ul li i, .certificates-page .info .general-info ul li i, .contacts-page .info .general-info ul li i, .projects-page .info .general-info ul li i {
     position: inherit;
   }
-  .about-page .info .general-info ul li div .data, .skills-page .info .general-info ul li div .data, .certificates-page .info .general-info ul li div .data, .contacts-page .info .general-info ul li div .data {
+  .about-page .info .general-info ul li div .data, .skills-page .info .general-info ul li div .data, .certificates-page .info .general-info ul li div .data, .contacts-page .info .general-info ul li div .data, .projects-page .info .general-info ul li div .data {
     display: inline-block;
     margin-left: 0;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div, .skills-page .info .general-info ul li i.fa-envelope + div, .certificates-page .info .general-info ul li i.fa-envelope + div, .contacts-page .info .general-info ul li i.fa-envelope + div {
+  .about-page .info .general-info ul li i.fa-envelope + div, .skills-page .info .general-info ul li i.fa-envelope + div, .certificates-page .info .general-info ul li i.fa-envelope + div, .contacts-page .info .general-info ul li i.fa-envelope + div, .projects-page .info .general-info ul li i.fa-envelope + div {
     margin-left: 0rem;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div .data, .skills-page .info .general-info ul li i.fa-envelope + div .data, .certificates-page .info .general-info ul li i.fa-envelope + div .data, .contacts-page .info .general-info ul li i.fa-envelope + div .data {
+  .about-page .info .general-info ul li i.fa-envelope + div .data, .skills-page .info .general-info ul li i.fa-envelope + div .data, .certificates-page .info .general-info ul li i.fa-envelope + div .data, .contacts-page .info .general-info ul li i.fa-envelope + div .data, .projects-page .info .general-info ul li i.fa-envelope + div .data {
     margin-left: 0rem;
   }
-  .about-page .info .general-info ul li i.fa-envelope + div .label, .skills-page .info .general-info ul li i.fa-envelope + div .label, .certificates-page .info .general-info ul li i.fa-envelope + div .label, .contacts-page .info .general-info ul li i.fa-envelope + div .label {
+  .about-page .info .general-info ul li i.fa-envelope + div .label, .skills-page .info .general-info ul li i.fa-envelope + div .label, .certificates-page .info .general-info ul li i.fa-envelope + div .label, .contacts-page .info .general-info ul li i.fa-envelope + div .label, .projects-page .info .general-info ul li i.fa-envelope + div .label {
     padding-left: 1rem;
   }
-  .about-page .about .button a, .skills-page .about .button a, .certificates-page .about .button a, .contacts-page .about .button a {
+  .about-page .about .button a, .skills-page .about .button a, .certificates-page .about .button a, .contacts-page .about .button a, .projects-page .about .button a {
     display: inline-block;
   }
   .contacts-page .contacts {
     padding: 3rem 0;
+  }
+  .project-info {
+    padding: 2rem 1rem 0.2rem;
+  }
+  aside.group-by-category {
+    padding: 0.2rem 1rem 2rem;
   }
   footer p {
     font-size: 0.7rem;
@@ -1801,7 +1850,7 @@ aside.group-by-category .sub-nav > a:hover {
   .home-page .heading div.heading-home h2:nth-child(3) {
     margin-bottom: 2rem;
   }
-  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info {
+  .about-page .info .general-info, .skills-page .info .general-info, .certificates-page .info .general-info, .contacts-page .info .general-info, .projects-page .info .general-info {
     padding: 2rem;
   }
 }
