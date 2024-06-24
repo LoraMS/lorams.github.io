@@ -82,7 +82,7 @@
     bg: /projectsbg/eshopbg
   tags: Front-end Development, Wordpress, WooCommerce
   data: wordpress
--  image: Cakeblog_redesign_title.png
+- image: Cakeblog_redesign_title.png
   name: Cake Blog Redesign
   link: 
     en: /projects/cakeblogredesign
