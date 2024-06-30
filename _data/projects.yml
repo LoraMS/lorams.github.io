@@ -89,3 +89,59 @@
     bg: /projectsbg/cakeblogredesignbg
   tags: Front-end Development, Wordpress
   data: wordpress
+- image: Desktop.jpg
+  name: HTML Signature
+  link: 
+    en: /projects/signature
+    bg: /projectsbg/signaturebg
+  tags: Front-end Development, HTML, CSS, Figma
+  data: html-templates
+- image: Desktop1.jpg
+  name: HTML Signature 1
+  link: 
+    en: /projects/signature1
+    bg: /projectsbg/signature1bg
+  tags: Front-end Development, HTML, CSS, Figma
+  data: html-templates
+- image: Desktop2.jpg
+  name: HTML Signature 2
+  link: 
+    en: /projects/signature2
+    bg: /projectsbg/signature2bg
+  tags: Front-end Development, HTML, Tailwind CSS, Figma
+  data: html-templates
+- image: Desktop3.jpg
+  name: HTML Signature 3
+  link: 
+    en: /projects/signature3
+    bg: /projectsbg/signature3bg
+  tags: Front-end Development, HTML, Tailwind CSS, Figma
+  data: html-templates
+- image: Desktop4.jpg
+  name: HTML Signature 4
+  link: 
+    en: /projects/signature4
+    bg: /projectsbg/signature4bg
+  tags: Front-end Development, HTML, Tailwind CSS, Figma
+  data: html-templates
+- image: Password reset Desktop.jpg
+  name: Password reset
+  link: 
+    en: /projects/passwordreset
+    bg: /projectsbg/passwordresetbg
+  tags: Front-end Development, HTML, Tailwind CSS, Maizzle, Figma
+  data: html-templates
+- image: Invitation Desktop.jpg
+  name: Invitation
+  link: 
+    en: /projects/invitation
+    bg: /projectsbg/invitationbg
+  tags: Front-end Development, HTML, Tailwind CSS, Maizzle, Figma
+  data: html-templates
+- image: Reminder Desktop.jpg
+  name: Reminder
+  link: 
+    en: /projects/reminder
+    bg: /projectsbg/reminderbg
+  tags: Front-end Development, HTML, Tailwind CSS, Maizzle, Figma
+  data: html-templates
